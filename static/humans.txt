@@ -1,0 +1,18 @@
+/* TEAM */
+  Author: Ahsan Mahmood
+  Site: https://aoneahsan.com
+  Contact: aoneahsan [at] gmail.com
+  LinkedIn: https://linkedin.com/in/aoneahsan
+  GitHub: https://github.com/aoneahsan
+  Location: Pakistan
+
+/* PRODUCT */
+  Name: Growthify
+  About: 16-module growth & conversion suite for Shopify merchants.
+  Marketing: https://growthify.aoneahsan.com
+
+/* SITE */
+  Docs: https://growthify-docs.aoneahsan.com
+  Built with: Docusaurus 3, React, TypeScript
+  Hosting: Firebase Hosting + GitHub Pages
+  Last updated: 2026-06-24

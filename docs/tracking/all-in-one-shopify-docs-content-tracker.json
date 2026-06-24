@@ -1,0 +1,47 @@
+{
+  "$schema": "all-in-one-shopify-docs-seo-content-tracker",
+  "description": "Per-page rich SEO/AEO content enrichment progress for the Growthify docs site. Resumable across sessions. Each batch raises a category's pages to the per-page-uniqueness floor (1000+ unique words, definition-first intro, 5-8 FAQ, distinct title/meta).",
+  "project": "all-in-one-shopify-docs",
+  "site": "https://growthify-docs.aoneahsan.com",
+  "createdAt": "2026-06-24",
+  "lastUpdated": "2026-06-24",
+  "expert": "Ahsan Mahmood",
+  "batchSize": 6,
+  "wordsPerPageMin": 1000,
+  "wordsPerPageTarget": "1000-1200",
+  "totalPages": 26,
+  "enrichedPages": 0,
+  "remainingPages": 26,
+  "categoryStrategy": "ONE category per batch. Pick the next category with the most unenriched pages; cover the highest-search-demand pages first.",
+  "categoryProgress": {
+    "getting-started": { "total": 4, "enriched": 0, "remaining": 4 },
+    "modules": { "total": 13, "enriched": 0, "remaining": 13 },
+    "storefront": { "total": 3, "enriched": 0, "remaining": 3 },
+    "admin": { "total": 3, "enriched": 0, "remaining": 3 },
+    "api": { "total": 2, "enriched": 0, "remaining": 2 },
+    "legal": { "total": 2, "enriched": 0, "remaining": 2 }
+  },
+  "batches": [
+    {
+      "id": "batch-00-scaffold",
+      "date": "2026-06-24",
+      "status": "complete",
+      "category": "all",
+      "notes": "Initial scaffold: 26 documentation pages created from the real Growthify code (16 modules, 52 admin features, 72 theme blocks, 50 storefront APIs, billing tiers, webhooks). Each page has a distinct title + meta description + definition-first intro + an FAQ block. SEO floor in place: robots.txt AI-bot allowlist, sitemap.xml (Docusaurus), llms.txt, JSON-LD (WebSite + Organization + SoftwareApplication), per-page OG/meta. Future batches deepen each page toward the 1000+ word floor and add HowTo/FAQPage JSON-LD where useful."
+    }
+  ],
+  "nextBatchSuggestion": {
+    "id": "batch-01",
+    "category": "modules",
+    "rationale": "Modules are the highest-search-demand pages (shopify popups, reviews, bundles, cart upsell). Deepen the 13 module pages first to the 1000+ word floor with concrete use cases, comparisons, and 5-8 FAQ entries each.",
+    "verifyBeforeUse": "yarn build must stay green; keep titles/meta distinct across all pages."
+  },
+  "qualityGates": [
+    "1000+ unique words per page (no shared boilerplate)",
+    "distinct <title> (50-60 chars) + meta description (140-160 chars)",
+    "definition-first intro (first sentence is a literal definition)",
+    "5-8 FAQ entries per page",
+    "honest framing on limits (what each module does NOT do)",
+    "yarn build clean before commit"
+  ]
+}

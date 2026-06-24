@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Growthify documentation social card">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(96, 150)">
+    <g transform="scale(0.62)">
+      <circle cx="120" cy="120" r="118" fill="#ffffff" opacity="0.14"/>
+      <g transform="translate(120, 120)">
+        <path d="M-60 15 L-68 75 Q-68 90 -53 90 L53 90 Q68 90 68 75 L60 15 Q60 0 45 0 L-45 0 Q-60 0 -60 15 Z" fill="white" opacity="0.95"/>
+        <path d="M-30 0 L-30 -30 Q-30 -52 0 -52 Q30 -52 30 -30 L30 0" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.95"/>
+      </g>
+    </g>
+  </g>
+  <text x="260" y="250" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="92" font-weight="800" fill="#ffffff">Growthify</text>
+  <text x="262" y="320" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="36" font-weight="500" fill="#e0e7ff">Documentation</text>
+  <text x="96" y="470" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="500" fill="#ede9fe">16 modules in one embedded Shopify app —</text>
+  <text x="96" y="518" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="500" fill="#ede9fe">popups, reviews, bundles, cart upsells, consent, analytics.</text>
+  <text x="96" y="588" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#c7d2fe">growthify-docs.aoneahsan.com · by Ahsan Mahmood</text>
+</svg>

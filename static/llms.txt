@@ -1,0 +1,55 @@
+# Growthify — Documentation Index
+
+> Growthify is a 16-module growth and conversion suite for Shopify merchants, delivered as one embedded Shopify app plus a theme app extension. It covers popups, product reviews, wishlist, bundle discounts, cart upsells, GDPR cookie consent, post-purchase upsells, reports, advanced analytics, OTP/COD, a landing-page builder, and product sourcing. Each module toggles independently; only the JavaScript for enabled modules ships to the storefront. Marketing site: https://growthify.aoneahsan.com. Author: Ahsan Mahmood (https://aoneahsan.com).
+
+## About
+
+Growthify replaces a stack of single-purpose Shopify apps with one install. The backend is a Remix app (Prisma + Neon Postgres in production) that owns Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, and 50+ entitlement-gated storefront API endpoints. The customer-facing half is a Shopify theme app extension with 72 Liquid blocks, fronted by a single `Growthify Embed` app-embed that injects `window.gfConfig` and lazy-loads each enabled module. Premium features are gated through Shopify App Subscriptions only (no license keys).
+
+This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a structured index for large language models.
+
+## Getting Started
+
+- [Introduction](https://growthify-docs.aoneahsan.com/intro): What Growthify is, who it's for, and how the suite is organised.
+- [Installation](https://growthify-docs.aoneahsan.com/getting-started/installation): Install from the Shopify App Store, enable the app embed, and add storefront blocks.
+- [Architecture](https://growthify-docs.aoneahsan.com/getting-started/architecture): How the Remix app, theme extension, app proxy, and marketing site fit together.
+- [Configuration](https://growthify-docs.aoneahsan.com/getting-started/configuration): App-embed settings, environment variables, and the app-proxy prefix.
+
+## Modules
+
+- [Modules overview](https://growthify-docs.aoneahsan.com/modules/overview): The 16 runtime modules and how they map to the storefront and admin.
+- [Platform & Loader](https://growthify-docs.aoneahsan.com/modules/platform): The embed, the lazy loader, and per-module gating.
+- [Popups](https://growthify-docs.aoneahsan.com/modules/popups): Email-capture, spin-to-win, exit-intent, and announcement popups.
+- [Reviews](https://growthify-docs.aoneahsan.com/modules/reviews): Star ratings, moderation, verified-purchase badges, carousels.
+- [Wishlist](https://growthify-docs.aoneahsan.com/modules/wishlist): Save-for-later, shareable wishlists, recently viewed.
+- [Bundles](https://growthify-docs.aoneahsan.com/modules/bundles): Quantity breaks, BOGO, mix-and-match, frequently-bought-together.
+- [Cart](https://growthify-docs.aoneahsan.com/modules/cart): Cart drawer, free-shipping bar, cross-sell, donations, gift messages.
+- [Consent](https://growthify-docs.aoneahsan.com/modules/consent): GDPR cookie banner, consent language packs, audit log.
+- [Upsells](https://growthify-docs.aoneahsan.com/modules/upsells): Post-purchase and thank-you-page upsells.
+- [Analytics & Reports](https://growthify-docs.aoneahsan.com/modules/analytics-reports): Cohorts, LTV, UTM attribution, P&L, the report engine.
+- [OTP / COD](https://growthify-docs.aoneahsan.com/modules/otp-cod): Phone-OTP verification and cash-on-delivery controls.
+- [Page Builder](https://growthify-docs.aoneahsan.com/modules/page-builder): Section-based landing pages (hero, countdown, FAQ, CTA).
+- [Sourcing](https://growthify-docs.aoneahsan.com/modules/sourcing): Product sourcing and supplier sync.
+
+## Storefront
+
+- [App embed](https://growthify-docs.aoneahsan.com/storefront/app-embed): The single `Growthify Embed` that injects `window.gfConfig` and boots the loader.
+- [Theme blocks](https://growthify-docs.aoneahsan.com/storefront/theme-blocks): The 72 Liquid app blocks and where each one renders.
+- [App proxy](https://growthify-docs.aoneahsan.com/storefront/app-proxy): How storefront blocks reach the server at `/apps/growthify/api/storefront/*`.
+
+## Admin & APIs
+
+- [Admin features](https://growthify-docs.aoneahsan.com/admin/features): The 52 admin feature pages.
+- [Billing plans](https://growthify-docs.aoneahsan.com/admin/billing-plans): Free / Pro / Growth / Scale tiers.
+- [Entitlements](https://growthify-docs.aoneahsan.com/admin/entitlements): How premium features are gated at request time.
+- [Storefront API](https://growthify-docs.aoneahsan.com/api/storefront-api): The 50 storefront endpoints behind the app proxy.
+- [Webhooks](https://growthify-docs.aoneahsan.com/api/webhooks): GDPR compliance webhooks, app/uninstalled, subscriptions, orders, products, inventory.
+
+## Legal
+
+- [Privacy](https://growthify-docs.aoneahsan.com/legal/privacy)
+- [Terms](https://growthify-docs.aoneahsan.com/legal/terms)
+
+## Author
+
+- [About the author](https://growthify-docs.aoneahsan.com/about-the-author): Ahsan Mahmood — full-stack engineer (https://aoneahsan.com).

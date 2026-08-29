@@ -26,7 +26,7 @@ Growthify is one product made of three deployable surfaces plus shared packages:
 
 | Surface | What it is | Stack |
 | --- | --- | --- |
-| `apps/shopify-app` | The embedded app: OAuth, billing, webhooks, admin UI, and 50+ storefront API endpoints | Remix 2, Prisma, Polaris, Neon Postgres (prod) |
+| `apps/shopify-app` | The embedded app: OAuth, billing, webhooks, admin UI, and 50+ storefront API endpoints | Remix 2, Prisma, Polaris, Supabase PostgreSQL (prod) |
 | `apps/theme-extension` | 72 Liquid app blocks + one `Growthify Embed` app-embed | Shopify Theme App Extension |
 | `apps/web` | The marketing site at growthify.aoneahsan.com | React 19, Vite, Radix UI, Firebase |
 | `packages/shared-types`, `packages/shared-utils` | Types + pure helpers shared across the apps | TypeScript |

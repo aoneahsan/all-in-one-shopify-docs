@@ -4,7 +4,7 @@
 
 ## About
 
-Growthify replaces a stack of single-purpose Shopify apps with one install. The backend is a Remix app (Prisma + Neon Postgres in production) that owns Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, and 50+ entitlement-gated storefront API endpoints. The customer-facing half is a Shopify theme app extension with 72 Liquid blocks, fronted by a single `Growthify Embed` app-embed that injects `window.gfConfig` and lazy-loads each enabled module. Premium features are gated through Shopify App Subscriptions only (no license keys).
+Growthify replaces a stack of single-purpose Shopify apps with one install. The backend is a Remix app (Prisma + Supabase PostgreSQL in production) that owns Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, and 50+ entitlement-gated storefront API endpoints. The customer-facing half is a Shopify theme app extension with 72 Liquid blocks, fronted by a single `Growthify Embed` app-embed that injects `window.gfConfig` and lazy-loads each enabled module. Premium features are gated through Shopify App Subscriptions only (no license keys).
 
 This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a structured index for large language models.
 

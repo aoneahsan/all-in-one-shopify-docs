@@ -18,7 +18,7 @@ const FEATURES: { title: string; body: string }[] = [
   },
   {
     title: 'Real platform underneath',
-    body: 'Remix + Prisma + Neon Postgres, Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, entitlement-gated APIs, and 72 Liquid blocks.',
+    body: 'Remix + Prisma + Supabase PostgreSQL, Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, entitlement-gated APIs, and 72 Liquid blocks.',
   },
 ];
 

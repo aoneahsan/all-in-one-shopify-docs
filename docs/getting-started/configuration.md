@@ -41,10 +41,10 @@ The Remix app validates the first four in production at boot (`apps/shopify-app/
 | --- | --- | --- |
 | `SHOPIFY_API_KEY` | yes | App client id from the Partner Dashboard |
 | `SHOPIFY_API_SECRET` | yes | App client secret |
-| `SHOPIFY_APP_URL` | yes | The deployed app host (e.g. the Fly.io URL) |
+| `SHOPIFY_APP_URL` | yes | The deployed app host — the Growthify VPS |
 | `SESSION_SECRET` | yes | 48+ random bytes for session signing |
 | `SHOPIFY_SCOPES` | yes | `read_products,write_products,read_orders,write_orders,read_customers,read_themes,write_themes` |
-| `DATABASE_URL` + `DIRECT_URL` | yes | Neon Postgres pooled + direct connection strings |
+| `DATABASE_URL` + `DIRECT_URL` | yes | Supabase transaction pooler (6543) + session pooler (5432). `prisma migrate deploy` needs the session pooler |
 | `GDPR_AUDIT_PEPPER` | yes | Secret used to hash customer emails in the GDPR audit log |
 | `VAPID_PUBLIC_KEY` + `VAPID_PRIVATE_KEY` | for push | Web Push keys |
 | `SENTRY_DSN` / `VITE_SENTRY_DSN` | optional | Server + client error reporting |

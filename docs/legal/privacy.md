@@ -19,7 +19,7 @@ This page summarises Growthify's data handling for documentation readers. The **
 
 ## How it's stored and shared
 
-- Store and submission data live in the app's **Neon Postgres** database (processor, controlled by you).
+- Store and submission data live in the app's **Supabase PostgreSQL** database (processor, controlled by you).
 - **Messaging-provider credentials** (Twilio, SendGrid, Mailgun, Klaviyo, etc.) are stored **encrypted at rest** and decrypted only at send time.
 - Optional **error reporting** (Sentry) processes error metadata, not customer analytics.
 - Growthify does **not** sell customer data or transfer it to third parties acting as their own controllers.

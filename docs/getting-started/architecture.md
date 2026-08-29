@@ -4,7 +4,7 @@ title: Architecture
 sidebar_label: Architecture
 sidebar_position: 2
 description: How the Growthify Remix app, theme app extension, app proxy, and marketing site fit together.
-keywords: [growthify architecture, remix shopify app, theme app extension, app proxy, neon postgres, prisma]
+keywords: [growthify architecture, remix shopify app, theme app extension, app proxy, supabase postgres, prisma]
 ---
 
 # Architecture
@@ -29,21 +29,21 @@ all-in-one-shopify/
 1. A shopper loads a storefront page. The **Growthify Embed** app-embed renders a small inline script that defines `window.gfConfig` (the app-proxy base URL `/apps/growthify`, the shop domain, and the asset base) and loads `growthify-embed.js`.
 2. `growthify-embed.js` lazy-loads only the module runtimes for the modules the merchant enabled.
 3. Each module's block (for example the reviews carousel or cart drawer) reads `window.gfConfig.appUrl` and calls the server through the **Shopify App Proxy** at `/apps/growthify/api/storefront/*`.
-4. Shopify forwards the proxied request to the Remix app on Fly.io. The route validates the proxy signature, resolves the shop, checks the relevant [entitlement](../admin/entitlements.md), reads/writes Postgres through Prisma, and returns JSON.
+4. Shopify forwards the proxied request to the Remix app on the Growthify VPS. The route validates the proxy signature, resolves the shop, checks the relevant [entitlement](../admin/entitlements.md), reads/writes Postgres through Prisma, and returns JSON.
 
 ```mermaid
 flowchart LR
   A[Storefront page] -->|app embed| B(window.gfConfig + loader)
   B -->|lazy load| C[Enabled module runtimes]
   C -->|/apps/growthify/api/storefront/*| D[Shopify App Proxy]
-  D -->|signed| E[Remix app on Fly.io]
-  E -->|Prisma| F[(Neon Postgres)]
+  D -->|signed| E[Remix app on the VPS]
+  E -->|Prisma| F[(Supabase PostgreSQL)]
 ```
 
 ## Backend stack (firm)
 
 - **Backend = Node + Remix only** (`apps/shopify-app`). No PHP/Laravel/Rails.
-- **Production DB = Neon Postgres** (serverless Postgres, branch-per-environment). Dev DB = SQLite via Prisma.
+- **Production DB = Supabase PostgreSQL.** One hosted project serves both development and production — there is no separate dev database and no SQLite. `DATABASE_URL` is the transaction pooler (port 6543, `pgbouncer=true`); `DIRECT_URL` is the session pooler (5432) and is what `prisma migrate deploy` needs.
 - **Licensing = Shopify App Subscriptions only** — no custom license keys. Every premium feature is gated through `verifySubscription(shopDomain)` + an `Entitlement(shopId, moduleId)` row.
 
 ## Admin UI

@@ -18,7 +18,7 @@ all-in-one-shopify/
 ├── apps/
 │   ├── shopify-app/      Remix app — OAuth, billing, webhooks, admin UI, storefront APIs
 │   ├── theme-extension/  72 Liquid app blocks + the Growthify Embed app-embed
-│   └── web/              Marketing site (React 19 + Vite + Firebase)
+│   └── web/              Marketing site (React 19 + Vite + Supabase; Firebase Hosting)
 └── packages/
     ├── shared-types/     TypeScript types shared across apps
     └── shared-utils/     Pure helpers (formatting, validation, money math)

@@ -64,6 +64,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'api/storefront-api',
         'api/webhooks',
+        'api/merchant-api-v1',
       ],
     },
     {

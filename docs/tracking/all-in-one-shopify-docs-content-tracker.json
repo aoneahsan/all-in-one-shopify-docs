@@ -1,25 +1,27 @@
 {
   "$schema": "all-in-one-shopify-docs-seo-content-tracker",
-  "description": "Per-page rich SEO/AEO content enrichment progress for the Growthify docs site. Resumable across sessions. Each batch raises a category's pages to the per-page-uniqueness floor (1000+ unique words, definition-first intro, 5-8 FAQ, distinct title/meta).",
+  "description": "Per-page rich SEO/AEO content enrichment progress for the Growthify docs site. Resumable across sessions. Each batch raises a category's pages to the per-page-uniqueness floor (1000+ unique words, definition-first intro, 5-8 FAQ, distinct title/meta, honest limits).",
   "project": "all-in-one-shopify-docs",
   "site": "https://growthify-docs.aoneahsan.com",
   "createdAt": "2026-06-24",
-  "lastUpdated": "2026-06-24",
+  "lastUpdated": "2026-09-13",
   "expert": "Ahsan Mahmood",
-  "batchSize": 6,
+  "batchSize": 13,
   "wordsPerPageMin": 1000,
-  "wordsPerPageTarget": "1000-1200",
-  "totalPages": 26,
-  "enrichedPages": 0,
-  "remainingPages": 26,
-  "categoryStrategy": "ONE category per batch. Pick the next category with the most unenriched pages; cover the highest-search-demand pages first.",
+  "wordsPerPageTarget": "1000-2000",
+  "totalPages": 29,
+  "enrichedPages": 18,
+  "remainingPages": 11,
+  "factBaseline": "App-repo audit what-this-project-consists-of.md, verified 2026-09-12. Counts used on this site: 263 Remix route files, 55 api.storefront.* routes, 51 admin.features.* screens, 16 entitlement module ids, 15 numbered module specs, 72 theme blocks (5 body embeds + 1 head embed + 66 section blocks), plans Free $0 / Pro $29 / Growth $79 / Scale $199 with 14-day trials on paid tiers.",
+  "categoryStrategy": "ONE category per batch. Order: getting-started -> modules -> storefront -> admin -> api -> legal -> author.",
   "categoryProgress": {
-    "getting-started": { "total": 4, "enriched": 0, "remaining": 4 },
-    "modules": { "total": 13, "enriched": 0, "remaining": 13 },
+    "getting-started": { "total": 4, "enriched": 4, "remaining": 0 },
+    "modules": { "total": 13, "enriched": 13, "remaining": 0 },
     "storefront": { "total": 3, "enriched": 0, "remaining": 3 },
     "admin": { "total": 3, "enriched": 0, "remaining": 3 },
-    "api": { "total": 2, "enriched": 0, "remaining": 2 },
-    "legal": { "total": 2, "enriched": 0, "remaining": 2 }
+    "api": { "total": 3, "enriched": 1, "remaining": 2 },
+    "legal": { "total": 2, "enriched": 0, "remaining": 2 },
+    "author": { "total": 1, "enriched": 0, "remaining": 1 }
   },
   "batches": [
     {
@@ -27,21 +29,68 @@
       "date": "2026-06-24",
       "status": "complete",
       "category": "all",
-      "notes": "Initial scaffold: 26 documentation pages created from the real Growthify code (16 modules, 52 admin features, 72 theme blocks, 50 storefront APIs, billing tiers, webhooks). Each page has a distinct title + meta description + definition-first intro + an FAQ block. SEO floor in place: robots.txt AI-bot allowlist, sitemap.xml (Docusaurus), llms.txt, JSON-LD (WebSite + Organization + SoftwareApplication), per-page OG/meta. Future batches deepen each page toward the 1000+ word floor and add HowTo/FAQPage JSON-LD where useful."
+      "notes": "Initial scaffold: 26 documentation pages created from the real Growthify code. Each page got a distinct title + meta description + definition-first intro + a short FAQ block. SEO floor in place: robots.txt AI-bot allowlist, sitemap.xml, llms.txt, site-wide JSON-LD, per-page OG/meta. Pages ranged 146-466 words, well below the floor."
+    },
+    {
+      "id": "batch-01-getting-started",
+      "date": "2026-09-13",
+      "status": "complete",
+      "category": "getting-started",
+      "pages": [
+        { "path": "docs/intro.md", "words": 1988 },
+        { "path": "docs/getting-started/installation.md", "words": 1810 },
+        { "path": "docs/getting-started/architecture.md", "words": 1774 },
+        { "path": "docs/getting-started/configuration.md", "words": 1687 }
+      ],
+      "notes": "Enriched to the full floor and corrected against the 2026-09-12 audit. Fact fixes: 178 server routes -> 263 route files (55 storefront API); web backend stated as Supabase Auth + PostgreSQL with Firebase as hosting only; no CI/CD, every deploy manual; admin feature screens 52 -> 51; app_proxy prefix/subpath un-inverted (prefix=apps, subpath=growthify) and the Fly.io host removed; prisma migrate dev documented as deliberately refused in favour of the forward-only workflow; the 16 entitlement module ids and 15 numbered module specs separated explicitly. FAQPage JSON-LD added to each page via an MDX head block and verified present in build/."
+    },
+    {
+      "id": "batch-01b-merchant-api",
+      "date": "2026-09-13",
+      "status": "complete",
+      "category": "api",
+      "pages": [{ "path": "docs/api/merchant-api-v1.md", "words": 3000 }],
+      "notes": "New page. Documents the read-only Merchant API v1 written from the implementation: saio_ bearer auth with sha256-at-rest and show-once plaintext, the three-shape envelope, the nine error codes with their HTTP statuses (including not_found for out-of-scope resources so the API is not an enumeration oracle), 60 req/min per-key budget with X-RateLimit-* headers, cursor pagination (limit 1-50, default 20), and all five endpoints with request and response examples. Privacy section records that reviews never expose authorEmail or orderId and wishlist data is aggregated per product. Added to sidebars.ts under API & Webhooks and to static/llms.txt."
+    }
+    {
+      "id": "batch-02-modules",
+      "date": "2026-09-13",
+      "status": "complete",
+      "category": "modules",
+      "pages": [
+        { "path": "docs/modules/overview.md", "words": 1713 },
+        { "path": "docs/modules/platform.md", "words": 1412 },
+        { "path": "docs/modules/analytics-reports.md", "words": 1394 },
+        { "path": "docs/modules/cart.md", "words": 1379 },
+        { "path": "docs/modules/popups.md", "words": 1379 },
+        { "path": "docs/modules/upsells.md", "words": 1359 },
+        { "path": "docs/modules/otp-cod.md", "words": 1351 },
+        { "path": "docs/modules/page-builder.md", "words": 1351 },
+        { "path": "docs/modules/consent.md", "words": 1320 },
+        { "path": "docs/modules/sourcing.md", "words": 1257 },
+        { "path": "docs/modules/wishlist.md", "words": 1248 },
+        { "path": "docs/modules/bundles.md", "words": 1246 },
+        { "path": "docs/modules/reviews.md", "words": 1211 }
+      ],
+      "notes": "All 13 module pages raised to the floor with distinct content and no shared boilerplate. The overview page now sets out BOTH module lists in full (16 entitlement ids with required plan and default state; 15 numbered specs) and explains why they differ, replacing the previous page that presented a 15-item list as 'the 16 modules'. Stale counts removed: 52 admin feature pages -> 51, 50 storefront endpoints -> 55. Honest limits taken from each spec's Explicit Exclusions: no photo/video reviews, no guest-to-account wishlist merge, no fixed/variant bundles, IAB TCF 2.0 out of scope, upsell rules engine specified but unbuilt, report builder and exports unbuilt, no full WYSIWYG page editor, Faire order sync and Syncee blocked on partnership agreements. FAQPage JSON-LD verified present in all 13 built pages. One YAML front-matter defect found and fixed by the build: an unquoted colon in platform.md's description failed gray-matter parsing.",
+      "gateNote": "First build of this batch exited 1 on that front-matter error; the fix was verified by a second build exiting 0."
     }
   ],
   "nextBatchSuggestion": {
-    "id": "batch-01",
-    "category": "modules",
-    "rationale": "Modules are the highest-search-demand pages (shopify popups, reviews, bundles, cart upsell). Deepen the 13 module pages first to the 1000+ word floor with concrete use cases, comparisons, and 5-8 FAQ entries each.",
-    "verifyBeforeUse": "yarn build must stay green; keep titles/meta distinct across all pages."
+    "id": "batch-03-storefront",
+    "category": "storefront",
+    "rationale": "Storefront pages (app embed, theme blocks, app proxy) are the troubleshooting surface merchants reach for when blocks render but do not load data.",
+    "verifyBeforeUse": "yarn build must stay green (onBrokenLinks: throw); keep titles and meta distinct; confirm FAQPage JSON-LD reaches build/ rather than trusting a green build."
   },
   "qualityGates": [
     "1000+ unique words per page (no shared boilerplate)",
-    "distinct <title> (50-60 chars) + meta description (140-160 chars)",
+    "distinct front-matter title (50-60 chars) + description (140-160 chars)",
     "definition-first intro (first sentence is a literal definition)",
-    "5-8 FAQ entries per page",
-    "honest framing on limits (what each module does NOT do)",
+    "structure: who it is for / how it works / limits / FAQ / related",
+    "5-8 FAQ entries per page, each a question heading",
+    "FAQPage JSON-LD present in the BUILT html, not merely in source",
+    "honest framing on limits (what the page's subject does NOT do)",
+    "every count traceable to the 2026-09-12 audit or a fresh recount",
     "yarn build clean before commit"
   ]
 }

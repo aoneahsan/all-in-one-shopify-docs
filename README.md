@@ -1,6 +1,6 @@
 # Growthify Docs
 
-Public documentation site for **Growthify** — a 16-module growth & conversion suite for Shopify merchants (popups, reviews, bundles, cart upsells, cookie consent, analytics, SEO, OTP/COD, page builder, sourcing) delivered as one embedded Shopify app.
+Public documentation site for **Growthify** — a growth and conversion suite for Shopify merchants (popups, reviews, wishlist, bundles, cart upsells, cookie consent, analytics, SEO, OTP/COD, page builder, sourcing) delivered as one embedded Shopify app plus a theme app extension.
 
 - **Live docs:** https://growthify-docs.aoneahsan.com
 - **Marketing site:** https://growthify.aoneahsan.com
@@ -12,21 +12,26 @@ Built with [Docusaurus 3](https://docusaurus.io/) + React 19 + TypeScript.
 
 ```bash
 yarn install
-yarn start      # dev server on http://localhost:5973
-yarn build      # static build into ./build
+yarn build      # static build into ./build — this is the verify gate
 yarn typecheck  # tsc --noEmit
+yarn serve      # serve the built output for a local check
 ```
+
+`onBrokenLinks` is set to `throw`, so **the build is also the link checker**: a dead internal link fails it.
 
 > This repo is **public** and contains **no secrets**. Never commit `.env` or credentials here.
 
-## Deployment (dual hosting)
+## Deployment — GitHub Pages only
 
-The site is configured to deploy to both Firebase Hosting and GitHub Pages.
+The site deploys to **GitHub Pages**, and only to GitHub Pages. Pushing to `main` runs
+`.github/workflows/deploy-pages.yml` (build → upload artifact → deploy). The custom domain is pinned by
+`static/CNAME`, which Docusaurus copies into `build/`.
 
-- **GitHub Pages:** pushing to `main` runs `.github/workflows/deploy.yml` (build → upload → deploy). Set repo **Settings → Pages → Source = GitHub Actions**. Custom domain via `static/CNAME`.
-- **Firebase Hosting:** `yarn firebase:deploy` (set the real Firebase project in `.firebaserc` first). Config in `firebase.json`.
+There is no Firebase project for this site, and there should never be one: no `firebase.json`, no
+`.firebaserc`, no `firebase:deploy` script.
 
-Both deploys are run by the maintainer.
+DNS and the repo's **Settings → Pages** custom-domain configuration are owner-only steps and are tracked in
+`docs/MANUAL-TASKS.md` (both are complete as of 2026-09-12).
 
 ## Structure
 
@@ -37,6 +42,7 @@ static/               robots.txt, llms.txt, humans.txt, CNAME, img/ (logo, favic
 docusaurus.config.ts  Site config + SEO/JSON-LD head tags
 sidebars.ts           Sidebar layout
 docs/tracking/        SEO content-enrichment tracker
+docs/MANUAL-TASKS.md  Owner-only tasks — excluded from the published build
 ```
 
 ## License

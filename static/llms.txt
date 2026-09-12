@@ -1,10 +1,12 @@
 # Growthify — Documentation Index
 
-> Growthify is a 16-module growth and conversion suite for Shopify merchants, delivered as one embedded Shopify app plus a theme app extension. It covers popups, product reviews, wishlist, bundle discounts, cart upsells, GDPR cookie consent, post-purchase upsells, reports, advanced analytics, OTP/COD, a landing-page builder, and product sourcing. Each module toggles independently; only the JavaScript for enabled modules ships to the storefront. Marketing site: https://growthify.aoneahsan.com. Author: Ahsan Mahmood (https://aoneahsan.com).
+> Growthify is a growth and conversion suite for Shopify merchants, delivered as one embedded Shopify app plus a theme app extension. It covers popups, product reviews, wishlist, bundle discounts, cart upsells, GDPR cookie consent, post-purchase upsells, reports, advanced analytics, OTP/COD, a landing-page builder, and product sourcing. Each module toggles independently; only the JavaScript for enabled modules ships to the storefront. Plans: Free $0, Pro $29, Growth $79, Scale $199 per month, with a 14-day trial on every paid tier. Marketing site: https://growthify.aoneahsan.com. Author: Ahsan Mahmood (https://aoneahsan.com).
 
 ## About
 
-Growthify replaces a stack of single-purpose Shopify apps with one install. The backend is a Remix app (Prisma + Supabase PostgreSQL in production) that owns Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, and 50+ entitlement-gated storefront API endpoints. The customer-facing half is a Shopify theme app extension with 72 Liquid blocks, fronted by a single `Growthify Embed` app-embed that injects `window.gfConfig` and lazy-loads each enabled module. Premium features are gated through Shopify App Subscriptions only (no license keys).
+Growthify replaces a stack of single-purpose Shopify apps with one install. The backend is a Remix app (Prisma over Supabase PostgreSQL) that owns Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, and 55 entitlement-gated storefront API routes. The customer-facing half is a Shopify theme app extension with 72 Liquid blocks, fronted by a single `Growthify Embed` app-embed that injects `window.gfConfig` and lazy-loads each enabled module. Premium features are gated through Shopify App Subscriptions only (no license keys). A read-only Merchant API v1 lets a merchant's own systems read their store, usage, reviews and wishlist demand.
+
+Counts on this site were verified against the application source on 2026-09-12.
 
 This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a structured index for large language models.
 
@@ -12,12 +14,12 @@ This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a struct
 
 - [Introduction](https://growthify-docs.aoneahsan.com/intro): What Growthify is, who it's for, and how the suite is organised.
 - [Installation](https://growthify-docs.aoneahsan.com/getting-started/installation): Install from the Shopify App Store, enable the app embed, and add storefront blocks.
-- [Architecture](https://growthify-docs.aoneahsan.com/getting-started/architecture): How the Remix app, theme extension, app proxy, and marketing site fit together.
+- [Architecture](https://growthify-docs.aoneahsan.com/getting-started/architecture): How the Remix app, theme extension, app proxy, and web app fit together.
 - [Configuration](https://growthify-docs.aoneahsan.com/getting-started/configuration): App-embed settings, environment variables, and the app-proxy prefix.
 
 ## Modules
 
-- [Modules overview](https://growthify-docs.aoneahsan.com/modules/overview): The 16 runtime modules and how they map to the storefront and admin.
+- [Modules overview](https://growthify-docs.aoneahsan.com/modules/overview): The 16 entitlement modules, the 15 numbered module specs, and how they differ.
 - [Platform & Loader](https://growthify-docs.aoneahsan.com/modules/platform): The embed, the lazy loader, and per-module gating.
 - [Popups](https://growthify-docs.aoneahsan.com/modules/popups): Email-capture, spin-to-win, exit-intent, and announcement popups.
 - [Reviews](https://growthify-docs.aoneahsan.com/modules/reviews): Star ratings, moderation, verified-purchase badges, carousels.
@@ -34,16 +36,17 @@ This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a struct
 ## Storefront
 
 - [App embed](https://growthify-docs.aoneahsan.com/storefront/app-embed): The single `Growthify Embed` that injects `window.gfConfig` and boots the loader.
-- [Theme blocks](https://growthify-docs.aoneahsan.com/storefront/theme-blocks): The 72 Liquid app blocks and where each one renders.
+- [Theme blocks](https://growthify-docs.aoneahsan.com/storefront/theme-blocks): The 72 Liquid app blocks — 5 body embeds, 1 head embed, 66 section blocks.
 - [App proxy](https://growthify-docs.aoneahsan.com/storefront/app-proxy): How storefront blocks reach the server at `/apps/growthify/api/storefront/*`.
 
 ## Admin & APIs
 
-- [Admin features](https://growthify-docs.aoneahsan.com/admin/features): The 52 admin feature pages.
-- [Billing plans](https://growthify-docs.aoneahsan.com/admin/billing-plans): Free / Pro / Growth / Scale tiers.
+- [Admin features](https://growthify-docs.aoneahsan.com/admin/features): The 51 admin feature screens.
+- [Billing plans](https://growthify-docs.aoneahsan.com/admin/billing-plans): Free $0 / Pro $29 / Growth $79 / Scale $199, 14-day trials on paid tiers.
 - [Entitlements](https://growthify-docs.aoneahsan.com/admin/entitlements): How premium features are gated at request time.
-- [Storefront API](https://growthify-docs.aoneahsan.com/api/storefront-api): The 50 storefront endpoints behind the app proxy.
+- [Storefront API](https://growthify-docs.aoneahsan.com/api/storefront-api): The 55 storefront routes behind the app proxy.
 - [Webhooks](https://growthify-docs.aoneahsan.com/api/webhooks): GDPR compliance webhooks, app/uninstalled, subscriptions, orders, products, inventory.
+- [Merchant API v1](https://growthify-docs.aoneahsan.com/api/merchant-api-v1): The read-only `saio_` bearer-key REST API — `/api/v1/me`, `/store`, `/usage`, `/reviews`, `/wishlist`, with cursor pagination, a 60-request-per-minute per-key budget, and a documented error-code table.
 
 ## Legal
 

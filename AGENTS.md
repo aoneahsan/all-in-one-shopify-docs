@@ -4,7 +4,7 @@ Public documentation site for **Growthify** (the `all-in-one-shopify` Shopify ap
 
 ## What this repo is
 - A **PUBLIC** docs site. The app/code repo (`all-in-one-shopify`) is separate and **private**.
-- Documents the REAL product read from the app code. Counts verified 2026-09-12 against the app repo's `what-this-project-consists-of.md`: 263 Remix route files (51 `admin.features.*` screens, 55 `api.storefront.*` routes), 16 entitlement modules, 15 numbered module specs, 72 theme blocks, 4 billing tiers, GDPR + lifecycle webhooks, a read-only Merchant API v1.
+- Documents the REAL product read from the app code. Counts verified 2026-09-12 against the app repo's `what-this-project-consists-of.md`: 274 Remix route files (51 `admin.features.*` screens, 55 `api.storefront.*` routes), 16 entitlement modules, 15 numbered module specs, 72 theme blocks, 4 billing tiers, GDPR + lifecycle webhooks, a read-only Merchant API v1.
 - 🔴 **The 16 entitlement module ids and the 15 numbered module specs are DIFFERENT SETS.** Never equate the two counts or present one list as the other.
 
 ## Hard rules
@@ -45,7 +45,7 @@ yarn serve       # serve the built output
 ## Sync rule
 Every rule here is mirrored in `AGENTS.md`, byte-identical. Update both together and prove it with `cmp CLAUDE.md AGENTS.md`.
 
-Last updated: 2026-09-13
+Last updated: 2026-09-12
 
 ## Sub-agents & Skills — Main-Context-First (IRON-SOLID)
 Default/built-in sub-agents (`general-purpose`, `Explore`, `Plan`, `claude`, `fork`, …) do NOT have

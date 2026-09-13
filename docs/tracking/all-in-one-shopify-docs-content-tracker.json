@@ -4,24 +4,52 @@
   "project": "all-in-one-shopify-docs",
   "site": "https://growthify-docs.aoneahsan.com",
   "createdAt": "2026-06-24",
-  "lastUpdated": "2026-09-13",
+  "lastUpdated": "2026-09-12",
   "expert": "Ahsan Mahmood",
   "batchSize": 13,
   "wordsPerPageMin": 1000,
   "wordsPerPageTarget": "1000-2000",
   "totalPages": 29,
-  "enrichedPages": 18,
-  "remainingPages": 11,
-  "factBaseline": "App-repo audit what-this-project-consists-of.md, verified 2026-09-12. Counts used on this site: 263 Remix route files, 55 api.storefront.* routes, 51 admin.features.* screens, 16 entitlement module ids, 15 numbered module specs, 72 theme blocks (5 body embeds + 1 head embed + 66 section blocks), plans Free $0 / Pro $29 / Growth $79 / Scale $199 with 14-day trials on paid tiers.",
+  "enrichedPages": 28,
+  "remainingPages": 0,
+  "factBaseline": "App-repo audit what-this-project-consists-of.md. Counts used on this site and recounted 2026-09-13: 55 api.storefront.* routes, 51 admin.features.* route files (50 feature screens + _index), 16 entitlement module ids, 15 numbered module specs, 72 theme blocks (5 body embeds + 1 head embed + 66 section blocks), 15 locale files, 6 webhook receiver route files covering 10 subscribed topics, plans Free $0 / Pro $29 / Growth $79 / Scale $199 with 14-day trials on paid tiers. NOTE: the app-repo audit's total route count moved 263 -> 274 on 2026-09-12 (6 api.account.* + 5 api.v1.* added); no page in this batch prints a total route count, but docs/intro.md, docs/getting-started/architecture.md and CLAUDE.md still say 263 and are outside this batch's scope.",
   "categoryStrategy": "ONE category per batch. Order: getting-started -> modules -> storefront -> admin -> api -> legal -> author.",
   "categoryProgress": {
-    "getting-started": { "total": 4, "enriched": 4, "remaining": 0 },
-    "modules": { "total": 13, "enriched": 13, "remaining": 0 },
-    "storefront": { "total": 3, "enriched": 0, "remaining": 3 },
-    "admin": { "total": 3, "enriched": 0, "remaining": 3 },
-    "api": { "total": 3, "enriched": 1, "remaining": 2 },
-    "legal": { "total": 2, "enriched": 0, "remaining": 2 },
-    "author": { "total": 1, "enriched": 0, "remaining": 1 }
+    "getting-started": {
+      "total": 4,
+      "enriched": 4,
+      "remaining": 0
+    },
+    "modules": {
+      "total": 13,
+      "enriched": 13,
+      "remaining": 0
+    },
+    "storefront": {
+      "total": 3,
+      "enriched": 3,
+      "remaining": 0
+    },
+    "admin": {
+      "total": 3,
+      "enriched": 3,
+      "remaining": 0
+    },
+    "api": {
+      "total": 3,
+      "enriched": 3,
+      "remaining": 0
+    },
+    "legal": {
+      "total": 2,
+      "enriched": 2,
+      "remaining": 0
+    },
+    "author": {
+      "total": 1,
+      "enriched": 0,
+      "remaining": 1
+    }
   },
   "batches": [
     {
@@ -37,10 +65,22 @@
       "status": "complete",
       "category": "getting-started",
       "pages": [
-        { "path": "docs/intro.md", "words": 1988 },
-        { "path": "docs/getting-started/installation.md", "words": 1810 },
-        { "path": "docs/getting-started/architecture.md", "words": 1774 },
-        { "path": "docs/getting-started/configuration.md", "words": 1687 }
+        {
+          "path": "docs/intro.md",
+          "words": 1988
+        },
+        {
+          "path": "docs/getting-started/installation.md",
+          "words": 1810
+        },
+        {
+          "path": "docs/getting-started/architecture.md",
+          "words": 1774
+        },
+        {
+          "path": "docs/getting-started/configuration.md",
+          "words": 1687
+        }
       ],
       "notes": "Enriched to the full floor and corrected against the 2026-09-12 audit. Fact fixes: 178 server routes -> 263 route files (55 storefront API); web backend stated as Supabase Auth + PostgreSQL with Firebase as hosting only; no CI/CD, every deploy manual; admin feature screens 52 -> 51; app_proxy prefix/subpath un-inverted (prefix=apps, subpath=growthify) and the Fly.io host removed; prisma migrate dev documented as deliberately refused in favour of the forward-only workflow; the 16 entitlement module ids and 15 numbered module specs separated explicitly. FAQPage JSON-LD added to each page via an MDX head block and verified present in build/."
     },
@@ -49,38 +89,154 @@
       "date": "2026-09-13",
       "status": "complete",
       "category": "api",
-      "pages": [{ "path": "docs/api/merchant-api-v1.md", "words": 3000 }],
+      "pages": [
+        {
+          "path": "docs/api/merchant-api-v1.md",
+          "words": 3000
+        }
+      ],
       "notes": "New page. Documents the read-only Merchant API v1 written from the implementation: saio_ bearer auth with sha256-at-rest and show-once plaintext, the three-shape envelope, the nine error codes with their HTTP statuses (including not_found for out-of-scope resources so the API is not an enumeration oracle), 60 req/min per-key budget with X-RateLimit-* headers, cursor pagination (limit 1-50, default 20), and all five endpoints with request and response examples. Privacy section records that reviews never expose authorEmail or orderId and wishlist data is aggregated per product. Added to sidebars.ts under API & Webhooks and to static/llms.txt."
-    }
+    },
     {
       "id": "batch-02-modules",
       "date": "2026-09-13",
       "status": "complete",
       "category": "modules",
       "pages": [
-        { "path": "docs/modules/overview.md", "words": 1713 },
-        { "path": "docs/modules/platform.md", "words": 1412 },
-        { "path": "docs/modules/analytics-reports.md", "words": 1394 },
-        { "path": "docs/modules/cart.md", "words": 1379 },
-        { "path": "docs/modules/popups.md", "words": 1379 },
-        { "path": "docs/modules/upsells.md", "words": 1359 },
-        { "path": "docs/modules/otp-cod.md", "words": 1351 },
-        { "path": "docs/modules/page-builder.md", "words": 1351 },
-        { "path": "docs/modules/consent.md", "words": 1320 },
-        { "path": "docs/modules/sourcing.md", "words": 1257 },
-        { "path": "docs/modules/wishlist.md", "words": 1248 },
-        { "path": "docs/modules/bundles.md", "words": 1246 },
-        { "path": "docs/modules/reviews.md", "words": 1211 }
+        {
+          "path": "docs/modules/overview.md",
+          "words": 1713
+        },
+        {
+          "path": "docs/modules/platform.md",
+          "words": 1412
+        },
+        {
+          "path": "docs/modules/analytics-reports.md",
+          "words": 1394
+        },
+        {
+          "path": "docs/modules/cart.md",
+          "words": 1379
+        },
+        {
+          "path": "docs/modules/popups.md",
+          "words": 1379
+        },
+        {
+          "path": "docs/modules/upsells.md",
+          "words": 1359
+        },
+        {
+          "path": "docs/modules/otp-cod.md",
+          "words": 1351
+        },
+        {
+          "path": "docs/modules/page-builder.md",
+          "words": 1351
+        },
+        {
+          "path": "docs/modules/consent.md",
+          "words": 1320
+        },
+        {
+          "path": "docs/modules/sourcing.md",
+          "words": 1257
+        },
+        {
+          "path": "docs/modules/wishlist.md",
+          "words": 1248
+        },
+        {
+          "path": "docs/modules/bundles.md",
+          "words": 1246
+        },
+        {
+          "path": "docs/modules/reviews.md",
+          "words": 1211
+        }
       ],
       "notes": "All 13 module pages raised to the floor with distinct content and no shared boilerplate. The overview page now sets out BOTH module lists in full (16 entitlement ids with required plan and default state; 15 numbered specs) and explains why they differ, replacing the previous page that presented a 15-item list as 'the 16 modules'. Stale counts removed: 52 admin feature pages -> 51, 50 storefront endpoints -> 55. Honest limits taken from each spec's Explicit Exclusions: no photo/video reviews, no guest-to-account wishlist merge, no fixed/variant bundles, IAB TCF 2.0 out of scope, upsell rules engine specified but unbuilt, report builder and exports unbuilt, no full WYSIWYG page editor, Faire order sync and Syncee blocked on partnership agreements. FAQPage JSON-LD verified present in all 13 built pages. One YAML front-matter defect found and fixed by the build: an unquoted colon in platform.md's description failed gray-matter parsing.",
       "gateNote": "First build of this batch exited 1 on that front-matter error; the fix was verified by a second build exiting 0."
+    },
+    {
+      "id": "batch-03-storefront-admin",
+      "date": "2026-09-13",
+      "status": "complete",
+      "category": "storefront + admin",
+      "pages": [
+        {
+          "path": "docs/storefront/app-proxy.md",
+          "words": 2055,
+          "bodyWords": 1551
+        },
+        {
+          "path": "docs/admin/entitlements.md",
+          "words": 2108,
+          "bodyWords": 1679
+        },
+        {
+          "path": "docs/admin/billing-plans.md",
+          "words": 1829,
+          "bodyWords": 1367
+        },
+        {
+          "path": "docs/storefront/app-embed.md",
+          "words": 1776,
+          "bodyWords": 1353
+        },
+        {
+          "path": "docs/storefront/theme-blocks.md",
+          "words": 1698,
+          "bodyWords": 1262
+        },
+        {
+          "path": "docs/admin/features.md",
+          "words": 1645,
+          "bodyWords": 1229
+        }
+      ],
+      "notes": "All six storefront and admin pages raised to the floor from 271-338 words, each with a distinct 50-60 char title, a 140-160 char description, a definition-first opening sentence, an explicit 'what it does not do' section, 7-8 FAQ question headings and FAQPage JSON-LD verified present in build/. Fact fixes made against the app source: (1) app-proxy.md no longer prints a fly.dev application_url, and states the real prefix=apps / subpath=growthify split instead of the inverted claim that the embed setting must match the app's 'prefix'; (2) '50 storefront endpoints' corrected to 55 on both app-proxy.md and features.md; (3) admin features 52 -> 50 screens plus an _index route (51 files), which also reconciles the Terms' '50+ features'; (4) app-embed.md no longer claims Growthify ships ONE app embed - there are six embed-target blocks (5 body, 1 head) and growthify-embed is the required one; (5) billing-plans.md now carries every plan-registry limit (popups, views, stored reviews, wishlist items, bundles, managed AI, team roles, multi-store) instead of a partial table, states that 'unlimited' is a sentinel and that Scale is NOT unlimited on managed AI calls, and that view allowances are per metered module rather than pooled; (6) entitlements.md now lists all 16 module ids with required plan and default-enabled state, and documents the 80% warning / 100% refusal thresholds, the calendar-month period, and that a per-shop ceiling can only narrow a plan allowance. Both admin pages state that cookie consent and compliance gating are unmetered on views at every tier (verified per plan). Every block name, feature-screen name and route count on these pages was diffed against the app repo rather than copied: 71 grouped block names + growthify-embed = 72 with zero unmatched, and all 50 feature-screen names matched with zero unmatched.",
+      "gateNote": "yarn typecheck exit 0; yarn build exit 0 (onBrokenLinks: throw); FAQPage JSON-LD confirmed in build/ for all six pages (7-8 Question nodes each).",
+      "notPublished": "Two app-source facts were deliberately NOT published: the backend host named in shopify.app.toml (an owner VPS origin - pages use <your-growthify-backend> as the merchant-api page already does), and the status host named in the canonical Terms, which probed 000 and does not resolve."
+    },
+    {
+      "id": "batch-04-api-legal",
+      "date": "2026-09-13",
+      "status": "complete",
+      "category": "api + legal",
+      "pages": [
+        {
+          "path": "docs/legal/privacy.md",
+          "words": 2086,
+          "bodyWords": 1651
+        },
+        {
+          "path": "docs/api/webhooks.md",
+          "words": 1897,
+          "bodyWords": 1492
+        },
+        {
+          "path": "docs/api/storefront-api.md",
+          "words": 1850,
+          "bodyWords": 1378
+        },
+        {
+          "path": "docs/legal/terms.md",
+          "words": 1699,
+          "bodyWords": 1283
+        }
+      ],
+      "notes": "Final four under-floor pages raised from 232-323 words. Fact fixes against the app source: (1) storefront-api.md previously listed endpoints that do not exist under api.storefront.* (reviews, wishlist, otp, popup/submit, the bundles free-gift pair, the cart-* set); the page now lists the real 55 route names, verified name by name with zero unmatched, and adds the 53 sibling api.* routes that run the SAME storefront guard wrapper (108 storefront-reachable endpoints in total, recounted 2026-09-13) so a reader looking for the reviews endpoint finds it; (2) '50 storefront endpoints' -> 55; (3) webhooks.md corrects the topic name inventory/update -> inventory_levels/update (the ROUTE is /webhooks/inventory/update; the topic is Shopify's) and now documents the GDPR request log, its hashed email and payload digest, the exported/redacted/deleted vs *_none outcome vocabulary, the re-raise-so-Shopify-retries rule, and the cascade-from-the-Shop-row deletion; (4) terms.md drops two false claims - that the app source repository is 'published for transparency and security audit' (it is private) and that this documentation site is MIT-licensed (there is no LICENSE file in this repo; package.json alone declares MIT) - and states the verified position instead: proprietary, all rights reserved; (5) privacy.md no longer implies the canonical policy's stale 'all data stored on Shopify's infrastructure' claim, states managed PostgreSQL, and adds the verified AES-256 provider-credential encryption, the published retention table and the PII-registry parity gate.",
+      "gateNote": "yarn typecheck exit 0; yarn build exit 0 (onBrokenLinks: throw); FAQPage JSON-LD confirmed in build/ for all four pages (7 Question nodes each); all 10 pages of batches 03-04 verified in build/ for rendered tables, headings and no raw JSON text.",
+      "legalPagesNotPadded": "The two legal pages were expanded ONLY by explaining commitments the app repo's docs/legal/*.md already make. Deliberately NOT written, because the source documents do not state them: the governing-law jurisdiction (TERMS-OF-SERVICE.md still carries an unfilled placeholder), company legal name, postal address, CCPA phone number and DPO contact (PRIVACY-POLICY.md carries unfilled placeholders for all of these; the app repo tracks them as an owner-only task). Also deliberately not republished: the canonical policy's unverifiable organisational security claims (penetration testing, 24/7 monitoring, staff security training), the status hostname named in the Terms (probed 000 - does not resolve), the file-storage/email provider name, and the privacy@ / legal@ addresses (stated in one project record but still placeholders in the canonical legal files, so only support@growthify.aoneahsan.com is published)."
     }
   ],
   "nextBatchSuggestion": {
-    "id": "batch-03-storefront",
-    "category": "storefront",
-    "rationale": "Storefront pages (app embed, theme blocks, app proxy) are the troubleshooting surface merchants reach for when blocks render but do not load data.",
-    "verifyBeforeUse": "yarn build must stay green (onBrokenLinks: throw); keep titles and meta distinct; confirm FAQPage JSON-LD reaches build/ rather than trusting a green build."
+    "id": "batch-05-author",
+    "category": "author",
+    "rationale": "docs/about-the-author.md is the last page under the floor at 158 words. It was outside the scope of batches 03-04.",
+    "verifyBeforeUse": "Author facts must come from the owner's own verified profile records; invent no employers, dates or client names."
   },
   "qualityGates": [
     "1000+ unique words per page (no shared boilerplate)",
@@ -92,5 +248,18 @@
     "honest framing on limits (what the page's subject does NOT do)",
     "every count traceable to the 2026-09-12 audit or a fresh recount",
     "yarn build clean before commit"
+  ],
+  "exemptions": [
+    {
+      "page": "docs/about-the-author.md",
+      "words": 158,
+      "reason": "The owner's own biography, and the one page an agent must not enrich. Reaching 1000 words would mean inventing biographical facts and writing in his PERSONAL voice — both off-limits. The fleet storytelling rule keeps the owner's voice in the `personal-voice` profile: calibrated from what he actually wrote, never overclaiming on a CV, every draft shown to him before it ships. Padding a biography is also worthless to a reader. Left at its honest length and declared here rather than counted as a silent miss.",
+      "decidedBy": "main session",
+      "decidedAt": "2026-09-12",
+      "reopenWhen": "The owner runs a personal-voice session for it, or asks for it explicitly."
+    }
+  ],
+  "notes": [
+    "2026-09-12: 28 of 29 pages clear the 1000-word floor. The 29th is an explicit exemption — see `exemptions`. `remainingPages` is therefore 0, not 1: there is no enrichment work left that an agent may do."
   ]
 }

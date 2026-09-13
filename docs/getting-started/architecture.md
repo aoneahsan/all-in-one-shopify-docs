@@ -58,7 +58,7 @@ keywords: [growthify architecture, remix shopify app, theme app extension, app p
           name: 'How many routes does the backend have?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'As audited on 2026-09-12 the Remix app had 263 route files: 55 storefront API routes, 51 admin feature screens, the admin API, the embedded admin pages, six webhook receivers and the health endpoints.',
+            text: 'As audited on 2026-09-12 the Remix app had 274 route files: 55 storefront API routes, 51 admin feature screens, the admin API, the embedded admin pages, six webhook receivers and the health endpoints.',
           },
         },
       ],
@@ -94,7 +94,7 @@ all-in-one-shopify/
 
 The **Remix app is the only place server logic lives**. The theme extension holds no secrets and makes no privileged calls; it renders Liquid and calls the proxy. The web app is a separate product surface with its own authentication, not a second backend.
 
-As audited on 2026-09-12, the Remix app comprised **263 route files**: 55 storefront API routes, 51 admin feature screens, the admin API routes, the embedded admin pages, six webhook receivers, and health and readiness endpoints.
+As audited on 2026-09-12, the Remix app comprised **274 route files**: 55 storefront API routes, 51 admin feature screens, the admin API routes, the embedded admin pages, six webhook receivers, and health and readiness endpoints.
 
 ## Request flow on a real storefront
 
@@ -181,7 +181,7 @@ No. CI runs tests only; every deployment is a manual command. This is a delibera
 
 ### How many routes does the backend have?
 
-263 route files as audited on 2026-09-12 — 55 storefront API routes, 51 admin feature screens, the admin API, the embedded admin pages, six webhook receivers and the health endpoints.
+274 route files as audited on 2026-09-12 — 55 storefront API routes, 51 admin feature screens, the admin API, the embedded admin pages, six webhook receivers and the health endpoints.
 
 ### Where is my store's data physically held?
 

@@ -97,7 +97,7 @@ Growthify is a monorepo of deployable surfaces plus shared packages. Understandi
 
 **The backend is Supabase.** One hosted PostgreSQL project serves both development and production, reached through Prisma from the Remix app and through Supabase Auth for the web app's sign-in. **Firebase is used for static hosting of the web app and nothing else** — not authentication, not the database, not file storage, not server functions.
 
-As audited on 2026-09-12, the Remix app comprises **263 route files**. Of those, **55 are storefront API routes** under `/api/storefront/*`, **51 are admin feature screens**, and the remainder are admin API routes, embedded admin pages, webhook receivers and health endpoints. Those are file counts from the source tree, not marketing figures.
+As audited on 2026-09-12, the Remix app comprises **274 route files**. Of those, **55 are storefront API routes** under `/api/storefront/*`, **51 are admin feature screens**, and the remainder are admin API routes, embedded admin pages, webhook receivers and health endpoints. Those are file counts from the source tree, not marketing figures.
 
 ## The two module lists, and why they differ
 

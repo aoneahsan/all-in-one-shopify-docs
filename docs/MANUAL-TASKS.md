@@ -3,20 +3,20 @@
 > The ONE place for everything only you (the human) can do. Fixed path: `docs/MANUAL-TASKS.md`.
 > Global spec: `~/.claude/rules/manual-tasks.md`. Excluded from the published site (see
 > `docusaurus.config.ts` → `docs.exclude`) because this repo is public.
-> Last updated: 2026-09-13
+> Last updated: 2026-09-12
 
 ## ⏳ Pending manual tasks
 
-| # | Task | Why only you | Status |
-|---|------|--------------|--------|
-| — | None open. | — | — |
+| #   | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Why only you                                                                                                                                  | Status      |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 3   | 🔴 **Decide this repo's licence — it currently grants rights you may not intend.** `package.json` line 11 declares `"license": "MIT"` and **there is no `LICENSE` file**. This repo is public and documents a product whose own repo is proprietary ("all rights reserved"). So the declaration is probably accidental, but MIT on the metadata is a real grant over this documentation, and only you can say what it should be. Three options: **(a)** drop the field — the safest, leaves the docs under default copyright, matching the product; **(b)** keep MIT and add the matching `LICENSE` file, deliberately open-sourcing the documentation text; **(c)** set a documentation-specific licence (e.g. CC BY-ND) and add its file. An agent found a page asserting "this documentation site is MIT-licensed" and removed the claim rather than act on it. | Choosing what rights the public has over your content is yours alone — it cannot be inferred from the code, and guessing either way is wrong. | Not started |
 
 ## ✅ Completed manual tasks
 
-| # | Task | Resolution | Date |
-|---|------|-----------|------|
-| 1 | **Add DNS.** In Hostinger, add a `CNAME` record `growthify-docs` → `aoneahsan.github.io` on `aoneahsan.com`. | Done. `https://growthify-docs.aoneahsan.com` resolves and answers `200`. | 2026-09-12 |
-| 2 | **Configure GitHub Pages.** Repo **Settings → Pages**: source = **GitHub Actions**, custom domain = `growthify-docs.aoneahsan.com`, HTTPS enforced. | Done. The custom domain serves the built site over HTTPS. | 2026-09-12 |
+| #   | Task                                                                                                                                                | Resolution                                                               | Date       |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ---------- |
+| 1   | **Add DNS.** In Hostinger, add a `CNAME` record `growthify-docs` → `aoneahsan.github.io` on `aoneahsan.com`.                                        | Done. `https://growthify-docs.aoneahsan.com` resolves and answers `200`. | 2026-09-12 |
+| 2   | **Configure GitHub Pages.** Repo **Settings → Pages**: source = **GitHub Actions**, custom domain = `growthify-docs.aoneahsan.com`, HTTPS enforced. | Done. The custom domain serves the built site over HTTPS.                | 2026-09-12 |
 
 `static/CNAME` ships `growthify-docs.aoneahsan.com` inside `build/`, and `.github/workflows/deploy-pages.yml`
 builds and publishes on every push to `main`.

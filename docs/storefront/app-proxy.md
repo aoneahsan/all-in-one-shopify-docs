@@ -4,7 +4,15 @@ title: "Shopify App Proxy routing for Growthify storefronts"
 sidebar_label: App proxy
 sidebar_position: 3
 description: "How Growthify storefront blocks reach the backend through the Shopify App Proxy at /apps/growthify, and which guards run before any data is read."
-keywords: [shopify app proxy, app proxy signature, apps growthify path, storefront same origin, proxy prefix subpath, hmac sha256 signature]
+keywords:
+  [
+    shopify app proxy,
+    app proxy signature,
+    apps growthify path,
+    storefront same origin,
+    proxy prefix subpath,
+    hmac sha256 signature,
+  ]
 ---
 
 <head>
@@ -87,10 +95,10 @@ keywords: [shopify app proxy, app proxy signature, apps growthify path, storefro
 
 A proxy path has exactly two configurable segments, and they are not interchangeable:
 
-| Part | Value | Who decides it |
-| --- | --- | --- |
-| **Prefix** — the first segment | `apps` | Shopify. Only `a`, `apps`, `community` or `tools` are accepted. |
-| **Subpath** — the second segment | `growthify` | You. Any label. |
+| Part                             | Value       | Who decides it                                                  |
+| -------------------------------- | ----------- | --------------------------------------------------------------- |
+| **Prefix** — the first segment   | `apps`      | Shopify. Only `a`, `apps`, `community` or `tools` are accepted. |
+| **Subpath** — the second segment | `growthify` | You. Any label.                                                 |
 
 Together they produce the base every block calls:
 
@@ -131,12 +139,24 @@ Every storefront route is wrapped in one shared guard rather than each one impro
 
 Two more limits apply to the body rather than the request: a JSON payload above **32 KB** is refused with `Payload too large`, and list reads are capped at **100 rows** regardless of what a caller asks for.
 
+## How a buyer-scoped endpoint knows who is asking
+
+Some endpoints answer for one shopper rather than for the shop: a customer's own orders and addresses, their loyalty balance, their subscriptions, their saved items, the B2B pricing negotiated for their account.
+
+For those, the shopper's identity comes from `logged_in_customer_id` — the parameter **Shopify itself appends and signs**. It is never taken from the request. A caller may still send a customer id of its own, and it is read for exactly one purpose: to be compared with the signed value. If the two disagree the request is refused with `403`. If there is no signed shopper at all, a buyer-scoped endpoint answers `401` rather than guessing.
+
+That distinction is the whole point, and it is easy to miss: **the signature and the shopper are two different facts.** A valid signature proves a request arrived through your storefront. It says nothing about which shopper is browsing, so an endpoint that trusted a `customerId` parameter from the page would be trusting a value any visitor can edit in their browser's devtools — on a request that is otherwise perfectly signed.
+
+Endpoints that serve a genuine anonymous visitor keep working without a signed shopper: storefront search, delivery-date selection, guest returns, publicly-visible B2B pricing, guest save-for-later, and the attribution writes behind cart and upsell reporting. They treat the visitor as anonymous rather than as whoever the request happens to name. Whether a given feature allows a guest is a property of that feature, not of the proxy.
+
+Merchant-facing analytics are a separate plane again. Those endpoints authenticate a Shopify admin session and are not reachable from a storefront page at all, however the request is shaped.
+
 ## The base URL contract
 
 The [app embed](./app-embed.md) sets one value that every block reads:
 
 ```js
-window.gfConfig.appUrl = '/apps/' + '<the embed App proxy prefix setting>';
+window.gfConfig.appUrl = "/apps/" + "<the embed App proxy prefix setting>";
 ```
 
 The `/apps/` part is fixed by the app's Shopify configuration; the setting supplies the second segment, and its default is `growthify`. So the embed setting must equal the **subpath** the app is configured with — not the literal `prefix`, which is always `apps`. If the two drift, every block builds a URL Shopify has no proxy for, and the whole storefront half of the app 404s at once.
@@ -155,7 +175,7 @@ The response says which modules are enabled and carries their storefront setting
 
 ## What the app proxy does not do
 
-- **It does not authenticate the shopper.** A valid signature proves the request came through your storefront, not who is browsing. Shopify does append `logged_in_customer_id` for a signed-in customer, but any feature that must be safe per shopper needs its own check on top of the proxy.
+- **It does not authenticate the shopper.** A valid signature proves the request came through your storefront, not who is browsing. Shopify does append `logged_in_customer_id` for a signed-in customer, but the proxy itself does not act on it — a feature that must be safe per shopper needs its own check on top. Growthify's buyer-scoped endpoints make exactly that check; see [how a buyer-scoped endpoint knows who is asking](#how-a-buyer-scoped-endpoint-knows-who-is-asking) above.
 - **It does not answer for a shop that has not installed the app.** The proxy exists because the installation created it, and every handler resolves the shop before reading. No shop record means an empty result, not somebody else's data.
 - **It does not expose the backend host.** Storefront markup contains only the relative `/apps/...` path. The app's own origin never appears in the theme, which is part of why blocks keep working if that origin changes.
 - **It is not a general-purpose API.** There is no bearer key, no CORS and no documented envelope here. To read your own store's data from your own systems, use the [Merchant API v1](../api/merchant-api-v1.md).

@@ -70,3 +70,14 @@ skill is missing, **install/enable it** rather than proceeding skill-less.
 Global records (rules, policy, audit reports) live in the `ahsan-notebook` repo at
 `static/assets/claude-code/`; the `~/.claude/…` paths are symlinks into it. Full text: `~/.claude/CLAUDE.md`.
 (Owner directives 2026-07-11 / 2026-07-14; fleet-rolled 2026-07-16.)
+
+## Context budget
+
+| Context budget | Value |
+|---|---|
+| Last optimized | 2026-09-17 |
+| Next routine optimization eligible | 2026-10-17 |
+| Guide bytes | 6,064 B |
+| Covered subtree | This docs repository root only |
+| Method | Already well inside the 28,672 B cap and inside the guidance target; content unchanged, cadence row added so the 30-day gate has a date to read. |
+| Fleet record | `D:/work/my-work/docs/tracking/claude-md-30kb-optimization-tracker.json` |

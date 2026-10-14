@@ -45,39 +45,15 @@ yarn serve       # serve the built output
 ## Sync rule
 Every rule here is mirrored in `AGENTS.md`, byte-identical. Update both together and prove it with `cmp CLAUDE.md AGENTS.md`.
 
-Last updated: 2026-09-12
-
-## Sub-agents & Skills — Main-Context-First (IRON-SOLID)
-Default/built-in sub-agents (`general-purpose`, `Explore`, `Plan`, `claude`, `fork`, …) do NOT have
-access to `/skills`, so delegating to them silently SKIPS the skills RULE #0 requires. Do all
-skill-relevant work in the **MAIN context**; use a sub-agent ONLY when a **custom** `aoneahsan-ccca-*`
-agent exists for that job, and give every write dispatch an explicit `EXCLUSIVE SCOPE`. When a relevant
-skill is missing, **install/enable it** rather than proceeding skill-less.
-(Owner directive 2026-07-11; full text in `~/.claude/CLAUDE.md`.)
-
-<!-- RULE:main-context-model-workflow v2026-07-16 -->
-## Main-Context + Skills + Model Workflow (IRON-SOLID — CRITICAL)
-1. **NO default/built-in sub-agents** for ANY work in this project — they cannot invoke /skills, which
-   RULE #0 makes mandatory. Do ALL work (planning, implementation, review, exploration) in the MAIN
-   context. A sub-agent is allowed ONLY when a CUSTOM `aoneahsan-ccca-*` agent exists for that exact job.
-2. **Skills always:** before any task, scan the available-skills list and invoke EVERY relevant skill; if a
-   needed skill is missing, download/enable/install it (or use the nearest installed equivalent and say so)
-   — never proceed skill-less. For this repo that means at least `aoneahsan-cccs-docusaurus`,
-   `-seo-content-writing`, `-markdown` and `-copywriting`.
-3. **Model floor:** Fable 5 / Opus 5 or newer only. Multi-phase features keep a resumable tracker,
-   resumed rather than re-planned from zero.
-
-Global records (rules, policy, audit reports) live in the `ahsan-notebook` repo at
-`static/assets/claude-code/`; the `~/.claude/…` paths are symlinks into it. Full text: `~/.claude/CLAUDE.md`.
-(Owner directives 2026-07-11 / 2026-07-14; fleet-rolled 2026-07-16.)
+Last updated: 2026-10-14
 
 ## Context budget
 
 | Context budget | Value |
 |---|---|
-| Last optimized | 2026-09-17 |
-| Next routine optimization eligible | 2026-10-17 |
-| Guide bytes | 6,064 B |
+| Last optimized | 2026-10-14 |
+| Next routine optimization eligible | 2026-11-13 |
+| Guide bytes | 4190 B |
 | Covered subtree | This docs repository root only |
-| Method | Already well inside the 28,672 B cap and inside the guidance target; content unchanged, cadence row added so the 30-day gate has a date to read. |
-| Fleet record | `D:/work/my-work/docs/tracking/claude-md-30kb-optimization-tracker.json` |
+| Method | Removed stale Claude model routing; kept Pages-only and public-repo constraints. |
+| Fleet record | `/home/ahsan/Documents/01-code/docs/tracking/project-context-budget-tracker.json` |

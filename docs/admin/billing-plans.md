@@ -42,7 +42,7 @@ keywords: [growthify pricing, shopify app subscriptions, app billing tiers, 14 d
           name: 'Can I cancel Growthify at any time?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, from your Shopify admin. Shopify sends an app_subscriptions/update webhook, the app writes the new plan, and access follows it on the next request. Your data is not deleted by a downgrade.',
+            text: 'Yes, from Growthify\'s billing page, any time. Your plan runs to the end of the period you paid for. Your data is not deleted by a downgrade.',
           },
         },
         {
@@ -50,7 +50,7 @@ keywords: [growthify pricing, shopify app subscriptions, app billing tiers, 14 d
           name: 'What does BYOK mean on the Growthify plans?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Bring your own key. For AI, email, SMS and social features you supply the provider credentials, so the provider account, its terms and its costs stay yours. Every tier can work this way.',
+            text: 'Bring your own key. AI runs on Growthify\'s free AI credit on every plan. Your own OpenAI or Anthropic key is optional; its AI requests aren\'t counted. The same idea covers email, SMS, and social features. Provider costs stay yours.',
           },
         },
         {
@@ -66,7 +66,7 @@ keywords: [growthify pricing, shopify app subscriptions, app billing tiers, 14 d
           name: 'Is Scale unlimited on everything?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'No, and the distinction matters. Scale is unlimited on popups, views, stored reviews, wishlist items and bundles, and it adds multi-store. Its managed AI allowance is a finite monthly number.',
+            text: 'No. Scale is unlimited on popups, storefront views, reviews, wishlist items, and bundles. It adds multi-store. On Growthify\'s free AI credit, Scale covers 50,000 AI requests a month.',
           },
         },
         {
@@ -84,7 +84,7 @@ keywords: [growthify pricing, shopify app subscriptions, app billing tiers, 14 d
 
 # Billing plans
 
-**A Growthify plan is a Shopify App Subscription: four tiers, one price each, charged on your Shopify invoice and enforced by the server at the request that spends an allowance.** There are no licence keys, no separate checkout and no card details held by Growthify — cancelling in Shopify is what cancels the plan.
+**A Growthify plan is a Shopify App Subscription: four tiers, one price each, charged on your Shopify invoice and enforced by the server at the request that spends an allowance.** There are no licence keys, no separate checkout and no card details held by Growthify. Cancel from Growthify's billing page any time. Your plan runs to the end of the period you paid for.
 
 ## Who this page is for
 
@@ -104,11 +104,14 @@ keywords: [growthify pricing, shopify app subscriptions, app billing tiers, 14 d
 | Stored reviews | 100 | 1,000 | 5,000 | unlimited |
 | Wishlist items | 500 | 5,000 | 25,000 | unlimited |
 | Bundles | 3 | 20 | 100 | unlimited |
-| Managed AI calls per month | — | — | 10,000 | 50,000 |
+| AI requests per month | 100 | 1,000 | 10,000 | 50,000 |
+| AI level | Spark | Pulse → Surge | Pulse → Surge | Surge |
 | Bring your own AI key | yes | yes | yes | yes |
 | Team roles | — | — | yes | yes |
 | Multi-store | — | — | — | yes |
 | Priority support | — | — | yes | yes |
+
+Each level is capped by what Growthify's free AI credit allows.
 
 Prices are in USD and every tier bills on a 30-day interval. All of these figures come from one file — a single plan registry that the pricing page, the billing screen, the gating code and the usage meter all read, rather than four copies that happen to agree.
 
@@ -120,13 +123,17 @@ Three of the rows above mean something more specific than they look.
 
 **"Modules included"** counts access, not activation. Free includes seven modules and starts with all seven switched on. Pro adds five and Growth adds four, and those nine arrive switched **off**, so an upgrade never changes your storefront until you enable something. The full list is on [Entitlements](./entitlements.md).
 
-**"unlimited"** is a real value in the plan data rather than a marketing word, stored as a sentinel that the limit checks understand. It is also not a synonym for "everything": Scale is unlimited on popups, views, reviews, wishlist items and bundles, and its managed AI allowance is a finite monthly number. The pricing copy used to say "unlimited everything" and was corrected for precisely that reason.
+**"unlimited"** is a real value in the plan data rather than a marketing word, stored as a sentinel that the limit checks understand. It is also not a synonym for "everything": Scale is unlimited on popups, views, reviews, wishlist items and bundles. On Growthify's free AI credit, Scale covers 50,000 AI requests a month. The pricing copy used to say "unlimited everything" and was corrected for precisely that reason.
 
-## AI: your key, or the plan's allowance
+## AI: one monthly allowance, or your own key
 
-Every tier can use the AI-assisted features with **your own provider key**. What the paid tiers add is a managed option — Growthify's own capacity — as a monthly allowance on Growth and Scale. Free and Pro have no managed allowance, so AI features there run on your key or not at all.
+Every plan runs AI on Growthify's free AI credit. Free includes 100 AI requests a month, Pro 1,000, Growth 10,000, and Scale 50,000. Every AI feature shares one shop-wide allowance.
 
-AI generation is also metered **per module**, at a ceiling below the plan total, so no single module can consume a whole month's allowance on its own.
+Free runs at Spark, Scale at Surge. Pro and Growth run at Pulse. They move to Surge after 3 paid months in a row. Trial days don't count toward Surge.
+
+When neither the free credit nor your own key is available, AI pauses. It says when to try again.
+
+With your own OpenAI or Anthropic key, AI requests aren't counted.
 
 ## How the subscription actually works
 
@@ -137,7 +144,7 @@ AI generation is also metered **per module**, at a ceiling below the plan total,
 
 Statuses map as you would expect and with no ambiguity left in the middle: `ACTIVE` becomes active; `CANCELLED`, `DECLINED` and `EXPIRED` all become cancelled; `FROZEN` becomes frozen; anything unrecognised becomes pending rather than being treated as paid.
 
-A subscription that is not active is not entitlement, even on a paid plan. Free is the exception — it needs no subscription and is always treated as active.
+A subscription that is not active is not entitlement, even on a paid plan. A plan canceled from Growthify's billing page stays active until its paid period ends. Free is the exception — it needs no subscription and is always treated as active.
 
 ## Pricing parity is a build gate
 
@@ -172,11 +179,11 @@ Fourteen days on Pro, Growth and Scale. Free has no trial and does not expire.
 
 ### Can I cancel at any time?
 
-Yes, from your Shopify admin. The `app_subscriptions/update` [webhook](../api/webhooks.md) writes the new plan and access follows on the next request.
+Yes, from Growthify's billing page, any time. Your plan runs to the end of the period you paid for. Your data is not deleted by a downgrade.
 
-### What does BYOK mean here?
+### What does BYOK mean on the Growthify plans?
 
-Bring your own key: for AI, email, SMS and social features you supply the provider credentials, so that account and its costs stay yours. Available on every tier.
+Bring your own key. AI runs on Growthify's free AI credit on every plan. Your own OpenAI or Anthropic key is optional; its AI requests aren't counted. The same idea covers email, SMS, and social features. Provider costs stay yours.
 
 ### Does Growthify charge for going over a limit?
 
@@ -184,7 +191,7 @@ No. The action is refused for the remainder of the calendar month instead.
 
 ### Is Scale unlimited on everything?
 
-No. Unlimited on popups, views, reviews, wishlist items and bundles, plus multi-store — but its managed AI allowance is a finite monthly number.
+No. Scale is unlimited on popups, storefront views, reviews, wishlist items, and bundles. It adds multi-store. On Growthify's free AI credit, Scale covers 50,000 AI requests a month.
 
 ### Is annual billing available?
 

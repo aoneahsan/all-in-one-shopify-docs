@@ -3,8 +3,8 @@ id: terms
 title: "Growthify terms of service — a summary for merchants"
 sidebar_label: Terms
 sidebar_position: 2
-description: "A documentation summary of the Growthify Terms of Service: billing, refunds, acceptable use, BYOK responsibility and the liability cap on claims."
-keywords: [growthify terms, shopify app terms of service, refund window, acceptable use policy, byok responsibility, limitation of liability]
+description: "A documentation summary of the Growthify Terms of Service: billing and cancellation, acceptable use, BYOK responsibility and the liability cap on claims."
+keywords: [growthify terms, shopify app terms of service, billing and cancellation, acceptable use policy, byok responsibility, limitation of liability]
 ---
 
 <head>
@@ -18,15 +18,7 @@ keywords: [growthify terms, shopify app terms of service, refund window, accepta
           name: 'How do I cancel Growthify, and when does access end?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Uninstalling the app terminates the agreement, and a subscription is cancelled from your Shopify admin. The Terms state that access continues until the end of the period you have paid for.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Can I get a refund for a Growthify charge?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'The Terms provide a 14-day window: contact support within 14 days of the charge. Shopify processes the refund itself, because Shopify took the payment.',
+            text: 'Cancel from Growthify\'s billing page any time, and your plan runs to the end of the period you paid for. Uninstalling terminates the agreement and removes the app at once.',
           },
         },
         {
@@ -76,7 +68,7 @@ keywords: [growthify terms, shopify app terms of service, refund window, accepta
 
 # Terms (summary)
 
-**This page is a documentation summary of the Growthify Terms of Service. It is not the agreement.** The canonical, legally binding Terms are published at **https://growthify.aoneahsan.com/terms**, and they govern wherever the two differ. This summary reflects the Terms last updated 23 May 2026, effective 1 June 2026. Growthify is operated by Ahsan Mahmood, referred to in the Terms as the Operator.
+**This page is a documentation summary of the Growthify Terms of Service. It is not the agreement.** The canonical, legally binding Terms are published at **https://growthify.aoneahsan.com/terms**, and they govern wherever the two differ. This summary reflects the Terms last updated 21 October 2026, effective 21 October 2026. Growthify is operated by Ahsan Mahmood, referred to in the Terms as the Operator.
 
 ## Who this page is for
 
@@ -87,14 +79,15 @@ keywords: [growthify terms, shopify app terms of service, refund window, accepta
 
 Installing, accessing or using the app is acceptance of the Terms. There is no separate signature step, which is standard for a Shopify app and worth stating plainly: the install click is the agreement.
 
-## Billing, cancellation and refunds
+## Billing and cancellation
 
 Billing runs entirely through the Shopify App Subscription API. Four tiers exist — Free, Pro at $29, Growth at $79 and Scale at $199 a month — and the practical consequences of billing through Shopify are these:
 
 - **A charge appears on your Shopify invoice.** Growthify never handles card details.
-- **Cancelling is done in Shopify**, and the Terms state that access continues until the end of the period already paid for.
-- **Uninstalling terminates the agreement.** That is the merchant's own termination route, stated as such.
-- **Refunds run on a 14-day window.** Contact support within 14 days of a charge; Shopify processes the refund, because Shopify took the payment.
+- **Cancel from Growthify's billing page any time**, and your plan runs to the end of the period you paid for.
+- **Uninstalling terminates the agreement** and removes the app at once. That is the merchant's own termination route, stated as such.
+
+The billing clause itself is in the [Terms of Service](https://growthify.aoneahsan.com/terms).
 
 The tiers, their limits and how a plan change propagates are on [Billing plans](../admin/billing-plans.md).
 
@@ -180,11 +173,7 @@ This is a convenience summary. The published Terms of Service govern.
 
 ### How do I cancel, and when does access end?
 
-Cancel the subscription in your Shopify admin, or uninstall to terminate the agreement. The Terms state access continues to the end of the paid period.
-
-### Can I get a refund?
-
-Contact support within 14 days of the charge. Shopify processes the refund.
+Cancel from Growthify's billing page any time, and your plan runs to the end of the period you paid for. Uninstalling terminates the agreement and removes the app at once.
 
 ### What uptime do the Terms commit to?
 

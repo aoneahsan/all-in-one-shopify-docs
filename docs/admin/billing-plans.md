@@ -195,4 +195,4 @@ Not currently; every paid tier is a 30-day interval.
 - [Entitlements](./entitlements.md) — how a plan becomes an enforced permission, and what happens at 80% and 100% of an allowance.
 - [Admin features](./features.md) — the screens a tier unlocks.
 - [Merchant API v1](../api/merchant-api-v1.md) — reading your plan and current usage programmatically.
-- [Terms](../legal/terms.md) — billing, refunds and cancellation as the Terms state them.
+- [Terms](../legal/terms.md) — billing and cancellation as the Terms state them.

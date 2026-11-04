@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Growthify logo">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="shineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.3)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0)"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)"/>
+  <circle cx="256" cy="256" r="240" fill="url(#shineGradient)"/>
+  <g transform="translate(256, 256)">
+    <path d="M-80 20 L-90 100 Q-90 120 -70 120 L70 120 Q90 120 90 100 L80 20 Q80 0 60 0 L-60 0 Q-80 0 -80 20 Z" fill="white" opacity="0.95"/>
+    <path d="M-40 0 L-40 -40 Q-40 -70 0 -70 Q40 -70 40 -40 L40 0" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.95"/>
+    <circle cx="-30" cy="60" r="12" fill="#6366f1"/>
+    <circle cx="0" cy="60" r="12" fill="#8b5cf6"/>
+    <circle cx="30" cy="60" r="12" fill="#a78bfa"/>
+  </g>
+  <g fill="white" opacity="0.8">
+    <path d="M380 100 L385 115 L400 120 L385 125 L380 140 L375 125 L360 120 L375 115 Z"/>
+    <path d="M120 380 L123 390 L133 393 L123 396 L120 406 L117 396 L107 393 L117 390 Z" transform="scale(0.8) translate(20, 60)"/>
+  </g>
+</svg>

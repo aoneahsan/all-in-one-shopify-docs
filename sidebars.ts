@@ -69,6 +69,28 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Moving to Growthify',
+      collapsed: true,
+      link: { type: 'doc', id: 'compare/index' },
+      items: [
+        'compare/vitals',
+        'compare/growave',
+        'compare/wooview',
+        'compare/judgeme',
+        'compare/loox',
+        'compare/yotpo-reviews',
+        'compare/klaviyo',
+        'compare/omnisend',
+        'compare/smile',
+        'compare/rivo',
+        'compare/swym-wishlist-plus',
+        'compare/upsell-com-reconvert',
+        'compare/frequently-bought-together',
+        'compare/pagefly',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Legal',
       collapsed: true,
       items: [

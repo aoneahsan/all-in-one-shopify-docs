@@ -120,7 +120,7 @@ Stored reviews per shop: **100 on Free, 1,000 on Pro, 5,000 on Growth, unlimited
 
 - **No photo or video reviews.** Text reviews with ratings, replies and helpful votes are what ships; media reviews are roadmap, not product.
 - **No review-request email automation** that chases customers after fulfilment.
-- **No import from another review app.** Existing reviews are not migrated for you.
+- **Import from another review app is API-only, and untried.** Endpoints exist for Judge.me, Yotpo, a Loox CSV and three others, but they have never run against a live store.
 - **No Shop app syndication**, which would require Shopify partner approval the app does not hold.
 - **No automatic fake-review detection.** Moderation is a human queue; verified-purchase status is a signal, not a verdict.
 - **No guarantee of rich results.** Crawlable markup makes review content eligible to be read; search engines decide the rest.

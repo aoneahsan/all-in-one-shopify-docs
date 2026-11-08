@@ -11,37 +11,23 @@ last_update:
 
 # Moving from PageFly to Growthify
 
-**Last checked November 7, 2026.** A page builder with AI page generation, A/B tests, heatmaps and a cart drawer in beta, free for one published page or section. <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">Check PageFly's listing yourself</a>.
+**Last checked November 7, 2026.** PageFly is a page builder with AI page generation, A/B tests, heatmaps and a cart drawer in beta, free for one published page or section. <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">PageFly's listing</a> is the source here.
 
-## You can't move yet
+If landing pages are where you spend your week, PageFly is the specialist: 320-plus templates, AI page generation, A/B tests and heatmaps, with one page free. Growthify's page builder is for a store that finds one useful without it being the main job, and wants it on the same subscription as the popups, reviews and bundles those pages will carry.
 
-- Growthify is not on the Shopify App Store yet, so you can't install it on your store today. You [join a waitlist](https://growthify.aoneahsan.com/contact).
-- It has no order or shipping confirmation emails. Shopify keeps sending its own.
-- There's no standalone discount code manager. Codes get made for popup submissions and review incentives, and nowhere else.
+Growthify isn't on the Shopify App Store yet, so you can't install it today. The [waitlist](https://growthify.aoneahsan.com/contact) is the way in for now.
 
-So if PageFly is doing its job, stay on it. This page is here so you know what a move would involve.
+## Count your pages
 
-## Who each one suits
+Pages you've built in PageFly belong to PageFly's editor, and nothing in Growthify imports them. So count how many you'd rebuild, and which of them still earn their place.
 
-Choose PageFly if landing pages are where you spend your time: 320-plus templates, AI page generation, A/B tests and heatmaps, with one page free.
+Then check the plan. Growthify's page builder sits in the SEO module, from the Pro plan; [Plans and limits](/admin/entitlements) has the detail and the [Page builder](/modules/page-builder) page shows what it builds. [Installation](/getting-started/installation) is for when installing becomes possible.
 
-Choose Growthify if a page builder is useful but not your main job, and you want it on the same subscription as the popups, reviews and bundles those pages will carry.
+Two limits that won't show up on a landing page but might matter: Growthify sends no order or shipping confirmations, which Shopify keeps sending, and it has no standalone discount code manager. Codes come from popup submissions and review incentives only.
 
-## What a move would involve
+## PageFly's plans
 
-Pages you've built in PageFly belong to PageFly's editor, so count how many you'd have to rebuild.
-
-Nothing here imports PageFly pages. The page builder sits in the SEO module, from the Pro plan.
-
-Where to read about it in these docs:
-
-- [Page builder](/modules/page-builder)
-- [Plans and limits](/admin/entitlements)
-- [Installation](/getting-started/installation), for when installing becomes possible
-
-## What PageFly costs
-
-As PageFly's listing showed it. Growthify's own plans are on the [plans page](/admin/billing-plans).
+As PageFly's listing showed them. Growthify's own plans are on the [plans page](/admin/billing-plans).
 
 | Plan | Price | Terms | Source |
 |---|---|---|---|
@@ -50,28 +36,16 @@ As PageFly's listing showed it. Growthify's own plans are on the [plans page](/a
 | Accelerate | $99 a month | Unlimited published pages and sections; or $990/year | <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Enterprise | $299 a month | 1,600 AI credits per month for 1 store | <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-## Feature by feature
+## Where both listings speak
 
-"Not stated" means PageFly's listing didn't mention it when we read it. It doesn't mean PageFly can't do it.
+PageFly's listing didn't mention popups, reviews, wishlists, bundles, post-purchase upsells, loyalty, referrals, email campaigns, abandoned-cart emails, discount codes, order confirmation emails or a cookie banner when we read it. We've left those rows out. A page builder's listing staying quiet on them doesn't mean PageFly can't.
 
 | Feature | Growthify | PageFly | Source |
 |---|---|---|---|
-| Popups and signup forms | Yes | Not stated on the pages we checked |  |
-| Product reviews | Yes | Not stated on the pages we checked |  |
-| Wishlist | Yes | Not stated on the pages we checked |  |
-| Bundles, BOGO and volume discounts | Yes | Not stated on the pages we checked |  |
 | Cart and product-page upsells | Yes | Partly | <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Post-purchase and thank-you page upsells | Yes | Not stated on the pages we checked |  |
-| Loyalty points | Yes | Not stated on the pages we checked |  |
-| Referral program | Yes | Not stated on the pages we checked |  |
-| Email campaigns to your subscribers | Yes | Not stated on the pages we checked |  |
-| Abandoned cart recovery emails | Yes | Not stated on the pages we checked |  |
-| Coupon and discount codes | Yes | Not stated on the pages we checked |  |
-| Order confirmation emails sent by the app | No | Not stated on the pages we checked |  |
-| Cookie consent banner | Yes | Not stated on the pages we checked |  |
 | Page builder | Yes | Yes | <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Reports and analytics | Yes | Yes | <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Free plan | Yes | Yes | <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Installable from the Shopify App Store today | No | Yes | <a href="https://apps.shopify.com/pagefly" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-The same comparison, with Growthify's plans beside it: [PageFly and Growthify](https://growthify.aoneahsan.com/compare/pagefly).
+PageFly next to Growthify's plans: [PageFly and Growthify](https://growthify.aoneahsan.com/compare/pagefly).

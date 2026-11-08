@@ -11,65 +11,41 @@ last_update:
 
 # Moving from Judge.me to Growthify
 
-**Last checked November 7, 2026.** A product reviews app with an unlimited free plan and one $15 paid plan that adds coupons, referrals and integrations. <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Check Judge.me's listing yourself</a>.
+**Last checked November 7, 2026.** Judge.me is a product reviews app with an unlimited free plan and one $15 paid plan that adds coupons, referrals and integrations. <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Judge.me's listing</a> is what we read.
 
-## You can't move yet
+Judge.me does reviews thoroughly: unlimited reviews and photos on the free plan, syndication to Google, Meta and the Shop app, and imports from most other review apps. If reviews are the one thing you need done well, that's hard to argue with. Growthify makes sense when reviews are one of several apps on your bill. Its reviews module sits on the free plan with popups and a wishlist, metering 100 reviews there and 1,000 on Pro.
 
-- Growthify is not on the Shopify App Store yet, so you can't install it on your store today. You [join a waitlist](https://growthify.aoneahsan.com/contact).
-- It has no order or shipping confirmation emails. Shopify keeps sending its own.
-- There's no standalone discount code manager. Codes get made for popup submissions and review incentives, and nowhere else.
+Growthify isn't on the Shopify App Store yet, so it can't be installed on any store today. [Join the waitlist](https://growthify.aoneahsan.com/contact) if you want to hear when it can.
 
-So if Judge.me is doing its job, stay on it. This page is here so you know what a move would involve.
+## Count your reviews first
 
-## Who each one suits
+Judge.me's free plan keeps unlimited reviews. Growthify's plans meter them, so the first number to know is how many you've collected. Compare it with [Plans and limits](/admin/billing-plans).
 
-Choose Judge.me if reviews are the one thing you need done thoroughly: unlimited reviews and photos on the free plan, syndication to Google, Meta and the Shop app, and imports from most other review apps.
+Then the import. The app has one for Judge.me, as API endpoints. It has never run against a live store, because no store has Growthify yet, so treat it as untested.
 
-Choose Growthify if reviews are one of several apps on your bill; the reviews module, popups and wishlist are on the free plan together, with 100 reviews metered there and 1,000 on Pro.
+After that, the [Reviews](/modules/reviews) page shows how they'd display, and [Installation](/getting-started/installation) is there for when installing becomes possible.
 
-## What a move would involve
+If you use the coupons on Judge.me's paid plan: Growthify makes codes for review incentives and popup submissions, and has no standalone discount code manager. It also doesn't send order or shipping confirmations; Shopify does.
 
-Reviews are the whole of Judge.me, so check how many you've collected first: Growthify's plans meter them.
+## Judge.me's plans
 
-The app has a review import for Judge.me, as API endpoints. It has never run against a live store, because no store has Growthify yet.
-
-Where to read about it in these docs:
-
-- [Reviews](/modules/reviews)
-- [Plans and limits](/admin/billing-plans)
-- [Installation](/getting-started/installation), for when installing becomes possible
-
-## What Judge.me costs
-
-As Judge.me's listing showed it. Growthify's own plans are on the [plans page](/admin/billing-plans).
+As Judge.me's listing showed them. Growthify's own plans are on the [plans page](/admin/billing-plans).
 
 | Plan | Price | Terms | Source |
 |---|---|---|---|
 | Free | $0 a month | Unlimited product and store reviews, photos and videos | <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Awesome | $15 a month | 15-day free trial | <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-## Feature by feature
+## What the listing let us compare
 
-"Not stated" means Judge.me's listing didn't mention it when we read it. It doesn't mean Judge.me can't do it.
+Judge.me's listing is about reviews, so it didn't mention popups, wishlists, bundles, cart or post-purchase upsells, loyalty, email campaigns, abandoned-cart emails, order confirmation emails, a cookie banner, a page builder or reports when we checked. We've left those rows out rather than fill the table with blanks; Judge.me may still have some of them.
 
 | Feature | Growthify | Judge.me | Source |
 |---|---|---|---|
-| Popups and signup forms | Yes | Not stated on the pages we checked |  |
 | Product reviews | Yes | Yes | <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Wishlist | Yes | Not stated on the pages we checked |  |
-| Bundles, BOGO and volume discounts | Yes | Not stated on the pages we checked |  |
-| Cart and product-page upsells | Yes | Not stated on the pages we checked |  |
-| Post-purchase and thank-you page upsells | Yes | Not stated on the pages we checked |  |
-| Loyalty points | Yes | Not stated on the pages we checked |  |
 | Referral program | Yes | Yes | <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Email campaigns to your subscribers | Yes | Not stated on the pages we checked |  |
-| Abandoned cart recovery emails | Yes | Not stated on the pages we checked |  |
 | Coupon and discount codes | Yes | Yes | <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Order confirmation emails sent by the app | No | Not stated on the pages we checked |  |
-| Cookie consent banner | Yes | Not stated on the pages we checked |  |
-| Page builder | Yes | Not stated on the pages we checked |  |
-| Reports and analytics | Yes | Not stated on the pages we checked |  |
 | Free plan | Yes | Yes | <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Installable from the Shopify App Store today | No | Yes | <a href="https://apps.shopify.com/judgeme" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-The same comparison, with Growthify's plans beside it: [Judge.me and Growthify](https://growthify.aoneahsan.com/compare/judgeme).
+Judge.me's plans against Growthify's: [Judge.me and Growthify](https://growthify.aoneahsan.com/compare/judgeme).

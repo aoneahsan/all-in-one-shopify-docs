@@ -11,37 +11,23 @@ last_update:
 
 # Moving from Frequently Bought Together to Growthify
 
-**Last checked November 7, 2026.** A bundle recommendation app that shows one-click add-to-cart bundles on product and cart pages, with four bundle discount types and a free plan of three manual bundles. <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Check Frequently Bought Together's listing yourself</a>.
+**Last checked November 7, 2026.** Frequently Bought Together is a bundle recommendation app. It shows one-click add-to-cart bundles on product and cart pages, with four bundle discount types and a free plan of three manual bundles. <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Its listing</a> is where these facts came from.
 
-## You can't move yet
+One well-placed bundle widget with automatic recommendations: if that's the job, Frequently Bought Together does it, and $9.99 a month is sized for a small store. Growthify suits you if you want bundles, quantity breaks and BOGO inside the same app as your cart drawer, reviews and popups. Those bundle features start on its Pro plan.
 
-- Growthify is not on the Shopify App Store yet, so you can't install it on your store today. You [join a waitlist](https://growthify.aoneahsan.com/contact).
-- It has no order or shipping confirmation emails. Shopify keeps sending its own.
-- There's no standalone discount code manager. Codes get made for popup submissions and review incentives, and nowhere else.
+Growthify isn't on the Shopify App Store yet, so it can't go on your store today. You can [join the waitlist](https://growthify.aoneahsan.com/contact).
 
-So if Frequently Bought Together is doing its job, stay on it. This page is here so you know what a move would involve.
+## A short comparison
 
-## Who each one suits
+It's one widget doing one job, which makes it about the simplest app here to compare. The one catch is the plan. Frequently Bought Together gives you three manual bundles free; in Growthify, bundles start on Pro.
 
-Choose Frequently Bought Together if one well-placed bundle widget with automatic recommendations is the job, and $9.99 a month for a small store is the right size.
+Look at [Bundles](/modules/bundles) for how bundles work and [Cart](/modules/cart) for where they'd show. [Installation](/getting-started/installation) is ready for when installing becomes possible.
 
-Choose Growthify if you want bundles, quantity breaks and BOGO, which start on the Pro plan, inside the same app as your cart drawer, reviews and popups.
+If you discount bundles with codes rather than automatically, note that Growthify has no standalone discount code manager. It makes codes for popup submissions and review incentives only. It also sends no order or shipping confirmations; Shopify keeps sending its own.
 
-## What a move would involve
+## Frequently Bought Together's plans
 
-It's one widget doing one job, which makes it about the simplest thing here to compare.
-
-Bundles start on Growthify's Pro plan. Frequently Bought Together has a free plan of three manual bundles.
-
-Where to read about it in these docs:
-
-- [Bundles](/modules/bundles)
-- [Cart](/modules/cart)
-- [Installation](/getting-started/installation), for when installing becomes possible
-
-## What Frequently Bought Together costs
-
-As Frequently Bought Together's listing showed it. Growthify's own plans are on the [plans page](/admin/billing-plans).
+As Frequently Bought Together's listing showed them. Growthify's own plans are on the [plans page](/admin/billing-plans).
 
 | Plan | Price | Terms | Source |
 |---|---|---|---|
@@ -50,28 +36,16 @@ As Frequently Bought Together's listing showed it. Growthify's own plans are on 
 | Professional II | $24.99 a month | Up to 500 orders/month; 14-day free trial | <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Professional III | $39.99 a month | 500+ orders/month; 14-day free trial | <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-## Feature by feature
+## The overlapping rows
 
-"Not stated" means Frequently Bought Together's listing didn't mention it when we read it. It doesn't mean Frequently Bought Together can't do it.
+Its listing sticks to bundles, so it didn't mention popups, reviews, wishlists, post-purchase upsells, loyalty, referrals, email campaigns, abandoned-cart emails, discount codes, order confirmation emails, a cookie banner or a page builder when we read it. Those rows are hidden, and that's no claim the app lacks them.
 
 | Feature | Growthify | Frequently Bought Together | Source |
 |---|---|---|---|
-| Popups and signup forms | Yes | Not stated on the pages we checked |  |
-| Product reviews | Yes | Not stated on the pages we checked |  |
-| Wishlist | Yes | Not stated on the pages we checked |  |
 | Bundles, BOGO and volume discounts | Yes | Yes | <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Cart and product-page upsells | Yes | Yes | <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Post-purchase and thank-you page upsells | Yes | Not stated on the pages we checked |  |
-| Loyalty points | Yes | Not stated on the pages we checked |  |
-| Referral program | Yes | Not stated on the pages we checked |  |
-| Email campaigns to your subscribers | Yes | Not stated on the pages we checked |  |
-| Abandoned cart recovery emails | Yes | Not stated on the pages we checked |  |
-| Coupon and discount codes | Yes | Not stated on the pages we checked |  |
-| Order confirmation emails sent by the app | No | Not stated on the pages we checked |  |
-| Cookie consent banner | Yes | Not stated on the pages we checked |  |
-| Page builder | Yes | Not stated on the pages we checked |  |
 | Reports and analytics | Yes | Yes | <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Free plan | Yes | Yes | <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Installable from the Shopify App Store today | No | Yes | <a href="https://apps.shopify.com/frequently-bought-together" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-The same comparison, with Growthify's plans beside it: [Frequently Bought Together and Growthify](https://growthify.aoneahsan.com/compare/frequently-bought-together).
+With Growthify's plans next to it: [Frequently Bought Together and Growthify](https://growthify.aoneahsan.com/compare/frequently-bought-together).

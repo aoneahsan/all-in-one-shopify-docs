@@ -11,39 +11,29 @@ last_update:
 
 # Moving from Growave to Growthify
 
-**Last checked November 7, 2026.** A retention app that combines loyalty points, referrals, reviews and wishlists, with a free tier up to 200 orders a month. <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Check Growave's listing yourself</a>.
+**Last checked November 7, 2026.** Growave is a retention app that combines loyalty points, referrals, reviews and wishlists, with a free tier up to 200 orders a month. <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Growave's listing</a> is the source for this page.
 
-## You can't move yet
+Growave is for stores where retention is the whole job. VIP tiers, store credit, POS loyalty and Apple or Google Wallet passes are its ground, with reviews and wishlists alongside. Growthify is for the store that also needs popups, bundles, cart upsells, a page builder and cookie consent, and would rather not add a second app for the storefront side.
 
-- Growthify is not on the Shopify App Store yet, so you can't install it on your store today. You [join a waitlist](https://growthify.aoneahsan.com/contact).
-- It has no order or shipping confirmation emails. Shopify keeps sending its own.
-- There's no standalone discount code manager. Codes get made for popup submissions and review incentives, and nowhere else.
+Nothing can be installed yet. Growthify isn't on the Shopify App Store; you can [join the waitlist](https://growthify.aoneahsan.com/contact) and keep Growave running.
 
-So if Growave is doing its job, stay on it. This page is here so you know what a move would involve.
+## Start at the shop counter
 
-## Who each one suits
+POS loyalty and wallet passes are on Growave's listing and aren't rows Growthify claims. If your counter staff use them, that decides it before anything else does.
 
-Choose Growave if retention is the whole job: VIP tiers, store credit, POS loyalty and Apple or Google Wallet passes, with reviews and wishlists alongside.
+If they don't:
 
-Choose Growthify if you also need popups, bundles, cart upsells, a page builder and cookie consent, and would rather not add a second app for the storefront side.
+1. **Find your loyalty program's new home.** In Growthify, retention sits in the marketing screens from the Growth plan: [Admin features: marketing and growth](/admin/features#marketing-and-growth).
+2. **Check the plan limits** against your program in [Plans and limits](/admin/entitlements).
+3. **Move the review display** to the [Reviews](/modules/reviews) module.
+4. **Add the wishlist block** from [Wishlist](/modules/wishlist).
+5. **[Install](/getting-started/installation)** when Growthify reaches the App Store.
 
-## What a move would involve
+Before you plan rewards around codes: Growthify has no standalone discount code manager, and makes codes only for popup submissions and review incentives. It also sends no order or shipping confirmations; Shopify keeps sending its own.
 
-Growave's main job is retention, and in Growthify that sits in the marketing screens from the Growth plan.
+## Growave's plans
 
-POS loyalty and wallet passes are on Growave's listing and aren't rows Growthify claims. If your counter staff use them, that decides it.
-
-Where to read about it in these docs:
-
-- [Admin features: marketing and growth](/admin/features#marketing-and-growth)
-- [Reviews](/modules/reviews)
-- [Wishlist](/modules/wishlist)
-- [Plans and limits](/admin/entitlements)
-- [Installation](/getting-started/installation), for when installing becomes possible
-
-## What Growave costs
-
-As Growave's listing showed it. Growthify's own plans are on the [plans page](/admin/billing-plans).
+As Growave's listing showed them. Growthify's own plans are on the [plans page](/admin/billing-plans).
 
 | Plan | Price | Terms | Source |
 |---|---|---|---|
@@ -52,28 +42,17 @@ As Growave's listing showed it. Growthify's own plans are on the [plans page](/a
 | Growth | $199 a month | Includes 1,500 monthly orders, $15 for every 100 additional orders; 14-day free trial | <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Plus | $499 a month | Includes 3,000 monthly orders, $10 for every 100 additional orders; 14-day free trial | <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-## Feature by feature
+## What both listings state
 
-"Not stated" means Growave's listing didn't mention it when we read it. It doesn't mean Growave can't do it.
+Growave's listing said nothing, when we read it, about popups, bundles, cart or post-purchase upsells, email campaigns, abandoned-cart emails, discount codes, order confirmation emails, a cookie banner, a page builder or reports. Those rows are hidden. That isn't the same as Growave lacking them.
 
 | Feature | Growthify | Growave | Source |
 |---|---|---|---|
-| Popups and signup forms | Yes | Not stated on the pages we checked |  |
 | Product reviews | Yes | Yes | <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Wishlist | Yes | Yes | <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Bundles, BOGO and volume discounts | Yes | Not stated on the pages we checked |  |
-| Cart and product-page upsells | Yes | Not stated on the pages we checked |  |
-| Post-purchase and thank-you page upsells | Yes | Not stated on the pages we checked |  |
 | Loyalty points | Yes | Yes | <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Referral program | Yes | Yes | <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Email campaigns to your subscribers | Yes | Not stated on the pages we checked |  |
-| Abandoned cart recovery emails | Yes | Not stated on the pages we checked |  |
-| Coupon and discount codes | Yes | Not stated on the pages we checked |  |
-| Order confirmation emails sent by the app | No | Not stated on the pages we checked |  |
-| Cookie consent banner | Yes | Not stated on the pages we checked |  |
-| Page builder | Yes | Not stated on the pages we checked |  |
-| Reports and analytics | Yes | Not stated on the pages we checked |  |
 | Free plan | Yes | Yes | <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Installable from the Shopify App Store today | No | Yes | <a href="https://apps.shopify.com/growave" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-The same comparison, with Growthify's plans beside it: [Growave and Growthify](https://growthify.aoneahsan.com/compare/growave).
+The full comparison, plans included: [Growave and Growthify](https://growthify.aoneahsan.com/compare/growave).

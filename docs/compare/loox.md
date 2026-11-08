@@ -11,37 +11,25 @@ last_update:
 
 # Moving from Loox to Growthify
 
-**Last checked November 7, 2026.** A photo and video reviews app with a free plan up to 500 orders, AI sorting and summaries on paid plans, and discounts offered in exchange for photo reviews. <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Check Loox's listing yourself</a>.
+**Last checked November 7, 2026.** Loox is a photo and video reviews app with a free plan up to 500 orders, AI sorting and summaries on paid plans, and discounts offered in exchange for photo reviews. <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Loox's listing</a> has the full picture.
 
-## You can't move yet
+If visual reviews carry your store, Loox is made for that, and from $49.99 a month it adds AI sorting, highlights and translations of those reviews, plus referrals. Growthify is the other route: reviews folded into one app with popups, bundles and loyalty. Its Pro plan is $29, and the reviews module meters 1,000 reviews there.
 
-- Growthify is not on the Shopify App Store yet, so you can't install it on your store today. You [join a waitlist](https://growthify.aoneahsan.com/contact).
-- It has no order or shipping confirmation emails. Shopify keeps sending its own.
-- There's no standalone discount code manager. Codes get made for popup submissions and review incentives, and nowhere else.
+Today it's a route on paper only. Growthify isn't on the Shopify App Store, so you can't install it; there's a [waitlist](https://growthify.aoneahsan.com/contact).
 
-So if Loox is doing its job, stay on it. This page is here so you know what a move would involve.
+## Your photos come first
 
-## Who each one suits
+1. **Open the [Reviews](/modules/reviews) page** and look at how Growthify's display treats photo reviews. Loox is built around them, so if that display doesn't work for your products, stop here.
+2. **Keep your Loox CSV to hand.** Growthify has a review import that takes one, as API endpoints. No store has Growthify yet, so that import has never run against a live one.
+3. **Check your review count against [Plans and limits](/admin/billing-plans).** Growthify meters reviews per plan.
+4. **Rethink the photo-review discount.** Loox offers discounts in exchange for photo reviews. Growthify makes codes for review incentives and popup submissions only, with no standalone discount code manager.
+5. **[Install](/getting-started/installation)** when that becomes possible.
 
-Choose Loox if visual reviews carry your store and you want AI sorting, highlights and translations of them, plus referrals, from $49.99 a month.
+Order and shipping confirmations aren't something Growthify sends. Shopify keeps sending its own.
 
-Choose Growthify if you would rather fold reviews into one app with popups, bundles and loyalty; the Pro plan is $29 and the reviews module meters 1,000 reviews there.
+## Loox's plans
 
-## What a move would involve
-
-Loox is built around photo reviews, so look at how Growthify's review display treats yours before anything else.
-
-The app has a review import that takes a Loox CSV, as API endpoints. It has never run against a live store, because no store has Growthify yet.
-
-Where to read about it in these docs:
-
-- [Reviews](/modules/reviews)
-- [Plans and limits](/admin/billing-plans)
-- [Installation](/getting-started/installation), for when installing becomes possible
-
-## What Loox costs
-
-As Loox's listing showed it. Growthify's own plans are on the [plans page](/admin/billing-plans).
+As Loox's listing showed them. Growthify's own plans are on the [plans page](/admin/billing-plans).
 
 | Plan | Price | Terms | Source |
 |---|---|---|---|
@@ -49,28 +37,16 @@ As Loox's listing showed it. Growthify's own plans are on the [plans page](/admi
 | Convert | $49.99 a month | 300 orders included, $50 per additional 300 orders; 14-day free trial | <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Unlimited | $299.99 a month | 14-day free trial | <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-## Feature by feature
+## Where the two can be compared
 
-"Not stated" means Loox's listing didn't mention it when we read it. It doesn't mean Loox can't do it.
+When we read it, Loox's listing didn't mention popups, wishlists, bundles, cart or post-purchase upsells, loyalty, email campaigns, abandoned-cart emails, order confirmation emails, a cookie banner, a page builder or reports. Those rows are hidden here. Unmentioned isn't the same as missing.
 
 | Feature | Growthify | Loox | Source |
 |---|---|---|---|
-| Popups and signup forms | Yes | Not stated on the pages we checked |  |
 | Product reviews | Yes | Yes | <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Wishlist | Yes | Not stated on the pages we checked |  |
-| Bundles, BOGO and volume discounts | Yes | Not stated on the pages we checked |  |
-| Cart and product-page upsells | Yes | Not stated on the pages we checked |  |
-| Post-purchase and thank-you page upsells | Yes | Not stated on the pages we checked |  |
-| Loyalty points | Yes | Not stated on the pages we checked |  |
 | Referral program | Yes | Yes | <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Email campaigns to your subscribers | Yes | Not stated on the pages we checked |  |
-| Abandoned cart recovery emails | Yes | Not stated on the pages we checked |  |
 | Coupon and discount codes | Yes | Partly | <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Order confirmation emails sent by the app | No | Not stated on the pages we checked |  |
-| Cookie consent banner | Yes | Not stated on the pages we checked |  |
-| Page builder | Yes | Not stated on the pages we checked |  |
-| Reports and analytics | Yes | Not stated on the pages we checked |  |
 | Free plan | Yes | Yes | <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Installable from the Shopify App Store today | No | Yes | <a href="https://apps.shopify.com/loox" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-The same comparison, with Growthify's plans beside it: [Loox and Growthify](https://growthify.aoneahsan.com/compare/loox).
+Loox and Growthify, plans and all: [the comparison page](https://growthify.aoneahsan.com/compare/loox).

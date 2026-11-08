@@ -11,40 +11,26 @@ last_update:
 
 # Moving from Vitals to Growthify
 
-**Last checked November 7, 2026.** A paid all-in-one app that puts reviews, bundles, upsells, popups, wishlists and 40-plus other tools under one subscription priced by monthly orders. <a href="https://apps.shopify.com/vitals" target="_blank" rel="noopener noreferrer nofollow">Check Vitals's listing yourself</a>.
+**Last checked November 7, 2026.** Vitals is a paid all-in-one app: reviews, bundles, upsells, popups, wishlists and 40-plus other tools under one subscription, priced by monthly orders. <a href="https://apps.shopify.com/vitals" target="_blank" rel="noopener noreferrer nofollow">See Vitals on the App Store</a>.
 
-## You can't move yet
+Both put many storefront tools under one subscription, so the differences are specific. Vitals installs today, has visitor replays and heatmaps, and gives you a 7-day trial, which suits you if $29.99 a month fits your order volume. Growthify has a free plan, a $29 Pro plan priced by storefront views instead of orders, and counts loyalty, referrals, cookie consent and abandoned-cart emails among its 16 modules.
 
-- Growthify is not on the Shopify App Store yet, so you can't install it on your store today. You [join a waitlist](https://growthify.aoneahsan.com/contact).
-- It has no order or shipping confirmation emails. Shopify keeps sending its own.
-- There's no standalone discount code manager. Codes get made for popup submissions and review incentives, and nowhere else.
+Growthify isn't on the Shopify App Store yet, so you can't put it on your store today. There's a [waitlist](https://growthify.aoneahsan.com/contact).
 
-So if Vitals is doing its job, stay on it. This page is here so you know what a move would involve.
+## Replacing a suite, tool by tool
 
-## Who each one suits
+Because Vitals does many jobs at once, leaving it means swapping several of its tools, not one.
 
-Choose Vitals if you want a suite you can install from the App Store today, with visitor replays, heatmaps and a 7-day trial, and $29.99 a month fits your order volume.
+1. **List the Vitals tools you've actually switched on.** That list is what you'd be replacing.
+2. **Match each to a module:** [Popups](/modules/popups), [Reviews](/modules/reviews), [Bundles](/modules/bundles), [Cart upsells](/modules/cart) and the [Page builder](/modules/page-builder).
+3. **Decide about replays and heatmaps.** There's no matching row in Growthify. [Analytics and reports](/modules/analytics-reports) shows what it does measure.
+4. **Check what Vitals sends by email.** Growthify sends no order or shipping confirmations; Shopify carries on sending its own.
+5. **Look at your discount codes.** Growthify has no standalone code manager and only makes codes for popup submissions and review incentives.
+6. **Then [install](/getting-started/installation)**, once it can be installed.
 
-Choose Growthify if you want a free plan under the same roof, a $29 Pro plan priced by storefront views rather than orders, and loyalty, referrals, cookie consent and abandoned-cart emails counted among the 16 modules.
+## Vitals' plans
 
-## What a move would involve
-
-Vitals covers many jobs at once, so a move means replacing several of its tools rather than one.
-
-Vitals' visitor replays and heatmaps have no matching row here. Read [Analytics and reports](/modules/analytics-reports) to see what Growthify does measure.
-
-Where to read about it in these docs:
-
-- [Popups](/modules/popups)
-- [Reviews](/modules/reviews)
-- [Bundles](/modules/bundles)
-- [Cart upsells](/modules/cart)
-- [Page builder](/modules/page-builder)
-- [Installation](/getting-started/installation), for when installing becomes possible
-
-## What Vitals costs
-
-As Vitals's listing showed it. Growthify's own plans are on the [plans page](/admin/billing-plans).
+As Vitals's listing showed them. Growthify's own plans are on the [plans page](/admin/billing-plans).
 
 | Plan | Price | Terms | Source |
 |---|---|---|---|
@@ -52,9 +38,9 @@ As Vitals's listing showed it. Growthify's own plans are on the [plans page](/ad
 | Growth | $79 a month | 201 to 1,000 orders a month; 7-day free trial | <a href="https://apps.shopify.com/vitals" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Pro | $179 a month | 1,001 to 5,000 orders a month; 7-day free trial | <a href="https://apps.shopify.com/vitals" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-## Feature by feature
+## All seventeen rows
 
-"Not stated" means Vitals's listing didn't mention it when we read it. It doesn't mean Vitals can't do it.
+Vitals' listing covers most of this table, so every row stays. Where it says "Not stated", the listing didn't mention it when we read it; that doesn't mean Vitals can't do it.
 
 | Feature | Growthify | Vitals | Source |
 |---|---|---|---|
@@ -76,4 +62,4 @@ As Vitals's listing showed it. Growthify's own plans are on the [plans page](/ad
 | Free plan | Yes | No | <a href="https://apps.shopify.com/vitals" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Installable from the Shopify App Store today | No | Yes | <a href="https://apps.shopify.com/vitals" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-The same comparison, with Growthify's plans beside it: [Vitals and Growthify](https://growthify.aoneahsan.com/compare/vitals).
+With Growthify's plans beside Vitals: [Vitals and Growthify](https://growthify.aoneahsan.com/compare/vitals).

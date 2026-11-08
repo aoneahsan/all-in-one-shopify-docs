@@ -11,38 +11,27 @@ last_update:
 
 # Moving from Omnisend to Growthify
 
-**Last checked November 7, 2026.** An email and SMS marketing app with popups, signup forms and abandoned-cart automations, free up to 250 contacts and priced by list size after that. <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Check Omnisend's listing yourself</a>.
+**Last checked November 7, 2026.** Omnisend is an email and SMS marketing app with popups, signup forms and abandoned-cart automations. A list of up to 250 contacts is free; past that, the price follows list size. <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Omnisend's listing</a> has the details.
 
-## You can't move yet
+Omnisend's appeal is one vendor for all of it: sending, templates, popups, automations and SMS, with a free tier while the list is small. Growthify fits a store whose list already sits with a provider and that wants popups, the abandoned-cart sequence and campaign screens on the same bill as reviews, bundles and loyalty.
 
-- Growthify is not on the Shopify App Store yet, so you can't install it on your store today. You [join a waitlist](https://growthify.aoneahsan.com/contact).
-- It has no order or shipping confirmation emails. Shopify keeps sending its own.
-- There's no standalone discount code manager. Codes get made for popup submissions and review incentives, and nowhere else.
+You can't make this move yet. Growthify isn't on the Shopify App Store, so there's nothing to install; the [waitlist](https://growthify.aoneahsan.com/contact) is open.
 
-So if Omnisend is doing its job, stay on it. This page is here so you know what a move would involve.
+## What changes when you leave Omnisend
 
-## Who each one suits
+Omnisend sends your email itself. Growthify sends through a provider you connect, so you'd keep a separate sending account and pay it separately. No automations come across either.
 
-Choose Omnisend if you want sending, templates, popups and automations from one vendor that also handles SMS, with a free tier for a small list.
+1. **Open a sending account first** if your list has only ever lived in Omnisend.
+2. **Note which popups are live** and what each one asks for. You'd rebuild them in [Popups](/modules/popups).
+3. **Copy out the steps of your abandoned cart sequence.** It gets set up again under [Cart](/modules/cart).
+4. **Re-create campaigns** from [Admin features: marketing and growth](/admin/features#marketing-and-growth).
+5. **Install** using [Installation](/getting-started/installation), when that's possible.
 
-Choose Growthify if your list is already with a provider and you want the popups, abandoned-cart sequence and campaign screens to live next to reviews, bundles and loyalty on one bill.
+Two things Growthify won't take over. It doesn't send order or shipping confirmations, which stay with Shopify. And codes are only made for popup submissions and review incentives; there's no discount code manager on its own.
 
-## What a move would involve
+## Omnisend's plans
 
-Omnisend sends your email itself. Growthify sends through a provider you connect, so you'd keep a separate sending account.
-
-Nothing here imports Omnisend automations. You'd build the popups and the abandoned cart sequence again.
-
-Where to read about it in these docs:
-
-- [Admin features: marketing and growth](/admin/features#marketing-and-growth)
-- [Popups](/modules/popups)
-- [Cart](/modules/cart)
-- [Installation](/getting-started/installation), for when installing becomes possible
-
-## What Omnisend costs
-
-As Omnisend's listing showed it. Growthify's own plans are on the [plans page](/admin/billing-plans).
+As Omnisend's listing showed them. Growthify's own plans are on the [plans page](/admin/billing-plans).
 
 | Plan | Price | Terms | Source |
 |---|---|---|---|
@@ -50,28 +39,18 @@ As Omnisend's listing showed it. Growthify's own plans are on the [plans page](/
 | Standard | $16 a month | Covers up to 500 contacts and rises as the list grows; 6,000 emails per month | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Pro | $59 a month | Covers up to 2,500 contacts and rises as the list grows; unlimited emails | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-## Feature by feature
+## Row by row
 
-"Not stated" means Omnisend's listing didn't mention it when we read it. It doesn't mean Omnisend can't do it.
+We've dropped the rows Omnisend's listing was silent on: reviews, wishlist, bundles, cart and post-purchase upsells, loyalty, referrals, discount codes, order confirmation emails and a cookie banner. Not mentioned doesn't mean missing.
 
 | Feature | Growthify | Omnisend | Source |
 |---|---|---|---|
 | Popups and signup forms | Yes | Yes | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Product reviews | Yes | Not stated on the pages we checked |  |
-| Wishlist | Yes | Not stated on the pages we checked |  |
-| Bundles, BOGO and volume discounts | Yes | Not stated on the pages we checked |  |
-| Cart and product-page upsells | Yes | Not stated on the pages we checked |  |
-| Post-purchase and thank-you page upsells | Yes | Not stated on the pages we checked |  |
-| Loyalty points | Yes | Not stated on the pages we checked |  |
-| Referral program | Yes | Not stated on the pages we checked |  |
 | Email campaigns to your subscribers | Yes | Yes | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Abandoned cart recovery emails | Yes | Yes | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Coupon and discount codes | Yes | Not stated on the pages we checked |  |
-| Order confirmation emails sent by the app | No | Not stated on the pages we checked |  |
-| Cookie consent banner | Yes | Not stated on the pages we checked |  |
 | Page builder | Yes | Partly | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Reports and analytics | Yes | Yes | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Free plan | Yes | Yes | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Installable from the Shopify App Store today | No | Yes | <a href="https://apps.shopify.com/omnisend" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-The same comparison, with Growthify's plans beside it: [Omnisend and Growthify](https://growthify.aoneahsan.com/compare/omnisend).
+Growthify's plans next to Omnisend's: [Omnisend and Growthify](https://growthify.aoneahsan.com/compare/omnisend).

@@ -11,37 +11,27 @@ last_update:
 
 # Moving from Smile.io to Growthify
 
-**Last checked November 7, 2026.** A loyalty app with points, VIP tiers and referrals, free up to 200 orders a month and priced by monthly orders above that. <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Check Smile.io's listing yourself</a>.
+**Last checked November 7, 2026.** Smile.io is a loyalty app with points, VIP tiers and referrals, free up to 200 orders a month and priced by monthly orders above that. <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Smile.io's listing</a> is where we read this.
 
-## You can't move yet
+When the brief is a loyalty program and nothing else, Smile.io covers it: points and referrals free up to 200 orders, POS support, and on the Growth plan, benchmark reports against other programs. Growthify is for a store where loyalty is one of several modules it pays for, sitting on the same Growth plan as reports and B2B pricing rather than on a separate bill that rises with orders.
 
-- Growthify is not on the Shopify App Store yet, so you can't install it on your store today. You [join a waitlist](https://growthify.aoneahsan.com/contact).
-- It has no order or shipping confirmation emails. Shopify keeps sending its own.
-- There's no standalone discount code manager. Codes get made for popup submissions and review incentives, and nowhere else.
+You can't switch yet. Growthify isn't on the Shopify App Store, so it can't be installed; the [waitlist](https://growthify.aoneahsan.com/contact) is open.
 
-So if Smile.io is doing its job, stay on it. This page is here so you know what a move would involve.
+## Points balances are the hard part
 
-## Who each one suits
+That's true of leaving any loyalty app, and Smile.io is no different. Nothing in Growthify imports points balances from Smile.io, so your members' points would need a plan of their own before anything else moves.
 
-Choose Smile.io if a loyalty program is the whole brief: points and referrals free up to 200 orders, POS support, and benchmark reports against other programs on the Growth plan.
+1. **Decide what happens to existing balances** while both programs would overlap.
+2. **Check that loyalty is on the plan you'd pick.** It starts on Growthify's Growth plan; see [Plans and limits](/admin/entitlements).
+3. **Read how points and referrals work** in [Admin features: marketing and growth](/admin/features#marketing-and-growth).
+4. **Check how members redeem rewards today.** If that runs on discount codes, know that Growthify has no standalone discount code manager; it makes codes for popup submissions and review incentives only.
+5. **[Install](/getting-started/installation)**, once installing becomes possible.
 
-Choose Growthify if loyalty is one of several modules you pay for and you want it on the same Growth plan as reports and B2B pricing instead of on a separate order-based bill.
+Growthify sends no order or shipping confirmations either. Those stay with Shopify.
 
-## What a move would involve
+## Smile.io's plans
 
-Points balances are the hard part of leaving any loyalty app, and Smile.io is no different.
-
-Nothing here imports points balances from Smile.io. Loyalty starts on Growthify's Growth plan.
-
-Where to read about it in these docs:
-
-- [Admin features: marketing and growth](/admin/features#marketing-and-growth)
-- [Plans and limits](/admin/entitlements)
-- [Installation](/getting-started/installation), for when installing becomes possible
-
-## What Smile.io costs
-
-As Smile.io's listing showed it. Growthify's own plans are on the [plans page](/admin/billing-plans).
+As Smile.io's listing showed them. Growthify's own plans are on the [plans page](/admin/billing-plans).
 
 | Plan | Price | Terms | Source |
 |---|---|---|---|
@@ -50,28 +40,18 @@ As Smile.io's listing showed it. Growthify's own plans are on the [plans page](/
 | Standard | $79 a month | Up to 1,000 monthly orders; 14-day free trial | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Growth | $199 a month | Includes 2,500 monthly orders, then $20 per additional 100 orders; 14-day free trial | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-## Feature by feature
+## Side by side, where Smile.io says
 
-"Not stated" means Smile.io's listing didn't mention it when we read it. It doesn't mean Smile.io can't do it.
+Reviews, wishlists, bundles, cart and post-purchase upsells, email campaigns, abandoned-cart emails, order confirmation emails, a cookie banner and a page builder weren't on Smile.io's listing when we read it. We left those rows out. Smile.io not listing them doesn't prove it can't do them.
 
 | Feature | Growthify | Smile.io | Source |
 |---|---|---|---|
 | Popups and signup forms | Yes | Partly | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Product reviews | Yes | Not stated on the pages we checked |  |
-| Wishlist | Yes | Not stated on the pages we checked |  |
-| Bundles, BOGO and volume discounts | Yes | Not stated on the pages we checked |  |
-| Cart and product-page upsells | Yes | Not stated on the pages we checked |  |
-| Post-purchase and thank-you page upsells | Yes | Not stated on the pages we checked |  |
 | Loyalty points | Yes | Yes | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Referral program | Yes | Yes | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Email campaigns to your subscribers | Yes | Not stated on the pages we checked |  |
-| Abandoned cart recovery emails | Yes | Not stated on the pages we checked |  |
 | Coupon and discount codes | Yes | Partly | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
-| Order confirmation emails sent by the app | No | Not stated on the pages we checked |  |
-| Cookie consent banner | Yes | Not stated on the pages we checked |  |
-| Page builder | Yes | Not stated on the pages we checked |  |
 | Reports and analytics | Yes | Yes | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Free plan | Yes | Yes | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 | Installable from the Shopify App Store today | No | Yes | <a href="https://apps.shopify.com/smile-io" target="_blank" rel="noopener noreferrer nofollow">Source</a> |
 
-The same comparison, with Growthify's plans beside it: [Smile.io and Growthify](https://growthify.aoneahsan.com/compare/smile).
+Smile.io's plans with Growthify's beside them: [Smile.io and Growthify](https://growthify.aoneahsan.com/compare/smile).

@@ -160,6 +160,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/social-card.svg',
     metadata: [
+      { name: 'yandex-verification', content: 'bfb02722189028cf' },
       {
         name: 'description',
         content:

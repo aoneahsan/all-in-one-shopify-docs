@@ -91,6 +91,13 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'White-label & licensing',
+      collapsed: true,
+      link: { type: 'doc', id: 'white-label/index' },
+      items: ['white-label/setup', 'white-label/updates', 'white-label/verify'],
+    },
+    {
+      type: 'category',
       label: 'Legal',
       collapsed: true,
       items: [

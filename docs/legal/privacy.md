@@ -180,6 +180,10 @@ Several features run on credentials you supply, and when they do, data goes wher
 
 The policy is explicit that a provider you choose is yours to evaluate, and that Growthify is not liable for how that provider handles data. This is the honest trade for BYOK: the account, the costs and the data-protection assessment stay with you.
 
+## White-label licence buyers
+
+If you ask for or buy a white-label licence, a renewal or a source buyout, the Privacy Policy covers that too. Your name, email, company, domain, country, notes and order are kept to issue, verify and renew the licence, and our licensing service processes them for us. The white-label pages and the verify page read prices, quotes and licence checks from that service directly in your browser, so your IP address and the request reach it; the pay button opens the payment provider's checkout. A licence check shows only public facts, never an email, phone number or price. Those payments are final.
+
 ## What this page does not do
 
 - **It does not govern.** The published policy does, and it is the document to cite.

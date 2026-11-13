@@ -157,6 +157,10 @@ The Operator may terminate access for a breach of the Terms, fraudulent activity
 
 The Terms may be updated with **30 days' notice**, and continued use after an update constitutes acceptance. Because the canonical document carries its own "Last Updated" date, that date — not this page — is the authority on which version currently applies.
 
+## White-label licences and buyouts
+
+The Terms of Service have a section for companies that license Growthify to run under their own name, or buy its source outright. In short: a licence means we host and deploy Growthify under your name, with no source code and no exclusivity until a buyout; it covers the platform groups paid for and six months of updates, with renewals after that; your copy runs as your own app in your own Shopify Partner account, and no Shopify App Store listing is promised; a buyout hands over the source of every repository that builds the shipped groups and ends further sales; licence, renewal and buyout payments are final. The [white-label section](../white-label/index.md) explains each part.
+
 ## What this summary does not cover
 
 - **It does not govern.** The published Terms do, and they are the document to cite or dispute.
@@ -193,7 +197,7 @@ The fees paid in the previous 12 months, with third-party provider issues exclud
 
 ### Can I copy or reuse the source?
 
-No. The product is proprietary, all rights are reserved, and the application repository is not public.
+No. The product is proprietary, all rights are reserved, and the application repository is not public. The one way to receive the source is a [source buyout](../white-label/index.md#licence-or-buyout).
 
 ## Related pages
 

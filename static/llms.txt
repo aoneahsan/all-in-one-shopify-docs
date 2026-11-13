@@ -56,3 +56,10 @@ This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a struct
 ## Author
 
 - [About the author](https://growthify-docs.aoneahsan.com/about-the-author): Ahsan Mahmood — full-stack engineer (https://aoneahsan.com).
+
+## White-label & licensing
+
+- [White-label licence](https://growthify-docs.aoneahsan.com/white-label): Growthify run under a buyer's own name, as their own app in their own Shopify Partner account; what each platform group covers (web today; the Android app is not on Google Play yet); licence versus source buyout. Prices live at https://growthify.aoneahsan.com/white-label/pricing.
+- [Setup](https://growthify-docs.aoneahsan.com/white-label/setup): the order a licensed copy goes live in, and who does each step.
+- [Updates and renewals](https://growthify-docs.aoneahsan.com/white-label/updates): six months included, 3, 6 or 12-month renewals counted from the later of today and the current end date.
+- [Verify a licence](https://growthify-docs.aoneahsan.com/white-label/verify): the licence key, the /.well-known/ licence file, and every verify answer.

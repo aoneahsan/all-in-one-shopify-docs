@@ -182,7 +182,7 @@ The policy is explicit that a provider you choose is yours to evaluate, and that
 
 ## White-label licence buyers
 
-If you ask for or buy a white-label licence, a renewal or a source buyout, the Privacy Policy covers that too. Your name, email, company, domain, country, notes and order are kept to issue, verify and renew the licence, and our licensing service processes them for us. The white-label pages and the verify page read prices, quotes and licence checks from that service directly in your browser, so your IP address and the request reach it; the pay button opens the payment provider's checkout. A licence check shows only public facts, never an email, phone number or price. Those payments are final.
+If you ask for or buy a white-label licence, a renewal or a source buyout, the Privacy Policy covers that too. Your name, email, company, domain, country, notes and order are kept to issue, verify and renew the licence, and our licensing service processes them for us. The white-label pages and the verify page read prices, quotes and licence checks from that service directly in your browser, so your IP address and the request reach it; the pay button opens our payment page with the Wise transfer details. Licence payments are made by bank transfer through Wise; we keep the transfer reference and any proof of payment you upload, to verify the payment. A licence check shows only public facts, never an email, phone number or price. Those payments are final.
 
 ## What this page does not do
 

@@ -7,7 +7,7 @@ slug: /white-label
 description: "How a Growthify white-label licence works: the Shopify app, theme extension and merchant site we run under your name, what each group covers, and the buyout."
 keywords: [growthify white label, white label shopify app, resell shopify app, shopify app licence, source code buyout, private label shopify app]
 last_update:
-  date: 2026-11-13
+  date: 2026-11-14
 ---
 
 <head>
@@ -21,6 +21,7 @@ last_update:
         { '@type': 'Question', name: 'Will my white-label copy be listed on the Shopify App Store?', acceptedAnswer: { '@type': 'Answer', text: 'Not as part of the licence. Your copy is an app in your own Shopify Partner account. You can apply for a listing; Shopify reviews it, and no listing is promised.' } },
         { '@type': 'Question', name: 'Which platform groups can I license today?', acceptedAnswer: { '@type': 'Answer', text: 'The web group: the embedded Shopify app, the theme app extension and the merchant site. The Android app is not on Google Play yet, so the mobile group is not offered.' } },
         { '@type': 'Question', name: 'Can another company license the same product?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, until somebody buys Growthify outright. After a buyout no new licences are sold, and licences sold before it keep their terms.' } },
+        { '@type': 'Question', name: 'Is there anything to pay after a buyout?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, a royalty. The buyer pays us 7% of the gross revenue Growthify earns, not counting sales tax or VAT collected. It is paid every quarter with a revenue statement, for as long as Growthify earns revenue, and it is still owed after the buyer resells it.' } },
         { '@type': 'Question', name: 'Where are the prices?', acceptedAnswer: { '@type': 'Answer', text: 'On the white-label pricing page of the Growthify site, which reads them live from the licensing service. This documentation does not repeat them, so it can never disagree with the price you would pay.' } },
       ],
     })}
@@ -78,7 +79,9 @@ There are two ways to buy Growthify.
 
 **A licence** is what this section describes. We run it, you sell it. It isn't exclusive: we may license Growthify to other companies too, each under their own name. There's no source code, and six months of updates are included.
 
-**A [source buyout](https://growthify.aoneahsan.com/white-label/buyout)** hands over the source code of every repository that builds the groups Growthify ships, with six months of updates. After a buyout we stop selling Growthify to anyone else, and the site says so the same day. Licences sold before the buyout keep running on their own terms, so a licensee is never cut off by someone else's purchase.
+**A [source buyout](https://growthify.aoneahsan.com/white-label/buyout)** hands over the source code of every repository that builds the groups Growthify ships, with six months of updates. After a buyout we stop selling Growthify to anyone else, and the site says so the same day. Licences sold before the buyout keep running on their own terms, so a licensee is never cut off by someone else's purchase. The buyer then pays us a royalty of 7% of the gross revenue Growthify earns, not counting sales tax or VAT collected, every quarter with a revenue statement, for as long as it earns, and still after a resale.
+
+Licences, renewals and buyouts are paid by Wise bank transfer. The payment page shows the transfer details; once we confirm the transfer, the licence key arrives by email.
 
 ## Changes made for you
 
@@ -117,6 +120,10 @@ The web group: the embedded Shopify app, the theme app extension and the merchan
 ### Can another company license the same product?
 
 Yes, until somebody buys Growthify outright. After a buyout no new licences are sold, and licences sold before it keep their terms.
+
+### Is there anything to pay after a buyout?
+
+Yes, a royalty. The buyer pays us 7% of the gross revenue Growthify earns, not counting sales tax or VAT collected. It's paid every quarter with a revenue statement, for as long as Growthify earns revenue, and it's still owed after the buyer resells it.
 
 ### Where are the prices?
 

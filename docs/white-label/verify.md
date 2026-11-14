@@ -37,7 +37,7 @@ This page is for three readers: a licensee who wants to show their merchants tha
 
 Each copy we deploy carries two things:
 
-- **A licence key.** It starts with the product's key prefix, `ALLINONESHOPIFY`, and it's in the licence email. The key is public: it identifies the licence but unlocks nothing, so it's fine to share.
+- **A licence key.** It starts with the product's key prefix, `GROWTHIFY`, and it's in the licence email. The key is public: it identifies the licence but unlocks nothing, so it's fine to share.
 - **A licence file** at a fixed address on the copy's own domain, under `/.well-known/`. The [licence terms page](https://growthify.aoneahsan.com/white-label/license-terms) shows the exact path. Beside it sits a PDF certificate with the same facts, for anyone who prefers a document.
 
 The licence file is small JSON:
@@ -46,7 +46,7 @@ The licence file is small JSON:
 {
   "$schema": "growthify-white-label-license",
   "product": "Growthify",
-  "publicKey": "ALLINONESHOPIFY-WL-…",
+  "publicKey": "GROWTHIFY-WL-…",
   "client": "The licensee's company name",
   "domain": "apps.example.com",
   "verifyUrl": "https://growthify.aoneahsan.com/verify-license?key=…",

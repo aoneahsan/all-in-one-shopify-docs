@@ -2,6 +2,8 @@
 
 **Last Updated:** 2026-10-20
 
+<!-- fleet:node-26-13-1 v1 --> Node 26.13.1 LTS (.nvmrc), packages latest — 2026-11-16
+
 Public documentation site for **Growthify** (the `all-in-one-shopify` Shopify app). Docusaurus 3 + React 19 + TypeScript. Deployed to **GitHub Pages only**.
 
 ## What this repo is

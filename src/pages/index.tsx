@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
+import { OTHER_PLATFORMS } from '@site/src/data/platforms';
 import styles from './index.module.css';
 
 const FEATURES: { title: string; body: string }[] = [
@@ -40,6 +41,13 @@ function Hero(): ReactNode {
             Installation
           </Link>
         </div>
+        <p className={styles.also}>
+          <span>Get Growthify</span>
+          {OTHER_PLATFORMS.map((platform) => (
+            <Link key={platform.id} href={platform.href}>{platform.name}</Link>
+          ))}
+          <Link to="/apps">All apps →</Link>
+        </p>
       </div>
     </header>
   );

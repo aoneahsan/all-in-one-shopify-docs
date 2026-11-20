@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { OTHER_PLATFORMS } from './src/data/platforms';
 
 // ---------------------------------------------------------------------------
 // Growthify — Documentation site config
@@ -205,6 +206,15 @@ const config: Config = {
         { type: 'docSidebar', sidebarId: 'mainSidebar', position: 'left', label: 'Docs' },
         { to: '/getting-started/installation', label: 'Get Started', position: 'left' },
         { to: '/modules/overview', label: 'Modules', position: 'left' },
+        {
+          type: 'dropdown',
+          label: 'Get Growthify',
+          position: 'right',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All apps', to: '/apps' },
+          ],
+        },
         { to: '/about-the-author', label: 'Author', position: 'right' },
         { href: 'https://github.com/aoneahsan/all-in-one-shopify-docs', label: 'GitHub', position: 'right' },
       ],
@@ -212,6 +222,13 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Get Growthify',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All apps', to: '/apps' },
+          ],
+        },
         {
           title: 'Documentation',
           items: [
@@ -225,7 +242,6 @@ const config: Config = {
         {
           title: 'Product',
           items: [
-            { label: 'Marketing site', href: 'https://growthify.aoneahsan.com' },
             { label: 'Privacy', to: '/legal/privacy' },
             { label: 'Terms', to: '/legal/terms' },
           ],

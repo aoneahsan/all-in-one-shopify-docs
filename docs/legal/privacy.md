@@ -184,6 +184,10 @@ The policy is explicit that a provider you choose is yours to evaluate, and that
 
 If you ask for or buy a white-label licence, a renewal or a source buyout, the Privacy Policy covers that too. Your name, email, company, domain, country, notes and order are kept to issue, verify and renew the licence, and our licensing service processes them for us. The white-label pages and the verify page read prices, quotes and licence checks from that service directly in your browser, so your IP address and the request reach it; the pay button opens our payment page with the Wise transfer details. Licence payments are made by bank transfer through Wise; we keep the transfer reference and any proof of payment you upload, to verify the payment. A licence check shows only public facts, never an email, phone number or price. Those payments are final.
 
+## Outside apps you connect
+
+On the web dashboard, **Other apps** lets you connect your own code, an assistant such as Claude or ChatGPT, a webhook address or a calendar feed to one store. Each reaches only that store and only what you tick. Your shoppers' records go out read only, with a fixed list of fields: never a review author's email or order id, a COD customer's email or phone, a saved address's phone, or who saved a wishlist product. Webhooks carry ids, counts and totals, never a shopper's personal fields, and calendar feeds hold your store's dates only. What each one receives is on [Growthify for developers](../developers/index.md).
+
 ## What this page does not do
 
 - **It does not govern.** The published policy does, and it is the document to cite.
@@ -233,3 +237,4 @@ No — the published policy states the feature does not collect or store birthda
 - [Entitlements](../admin/entitlements.md) — the seven scopes and the reason each is requested.
 - [Terms](./terms.md) — billing, acceptable use and liability.
 - [Merchant API v1](../api/merchant-api-v1.md) — which fields a read-only integration can and cannot receive.
+- [Growthify for developers](../developers/index.md) — keys, assistants, webhooks and calendar feeds, and the shopper fields each can reach.

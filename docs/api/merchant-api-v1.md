@@ -26,7 +26,7 @@ keywords: [growthify merchant api, shopify app rest api, bearer api key, read on
           name: 'Where do I create a Growthify API key?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'In the Growthify account dashboard under API Keys, or in the embedded Shopify admin under Settings. The plaintext key is shown exactly once, at creation. Growthify stores only a SHA-256 hash of it, so a lost key is replaced rather than recovered.',
+            text: 'In the embedded Shopify admin under Settings. On the web dashboard, Other apps lists them and makes the newer gfy_pat_ keys instead. The plaintext key is shown exactly once, at creation. Growthify stores only a SHA-256 hash of it, so a lost key is replaced rather than recovered.',
           },
         },
         {
@@ -76,6 +76,10 @@ keywords: [growthify merchant api, shopify app rest api, bearer api key, read on
 
 # Merchant API v1
 
+:::note Newer keys
+Keys are now made under **Other apps** on the web dashboard. They start with `gfy_pat_`, can read and change more of your store's data, and use [the Growthify API](../developers/api.md). Your `saio_` keys keep working as described on this page; [Moving from Merchant API v1](../developers/access-keys.md#moving-from-merchant-api-v1) shows where each address went.
+:::
+
 **The Growthify Merchant API is a read-only HTTP interface that lets a merchant's own systems read what Growthify holds for their store** — the store record and its modules, the metered counters for the current billing period, published review content, and wishlist demand aggregated per product. It is a server-to-server plane, authenticated by a bearer key scoped to exactly one store, and it returns JSON in the same envelope on every route.
 
 It exists because a merchant's data should not be trapped behind an embedded admin. A warehouse dashboard that wants save counts, a business-intelligence job that wants last month's review volume, a nightly script that checks how close a store is to its plan ceiling — none of those should have to scrape a screen or hold Shopify credentials.
@@ -97,7 +101,7 @@ curl https://<your-growthify-backend>/api/v1/me \
   -H "Authorization: Bearer saio_xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-Keys carry the `saio_` prefix, which names the plane: a merchant **data** key, read-only, scoped to one store. Create one in the Growthify account dashboard under **API Keys**, or in the embedded Shopify admin under **Settings**.
+Keys carry the `saio_` prefix, which names the plane: a merchant **data** key, read-only, scoped to one store. Create one in the embedded Shopify admin under **Settings**. On the web dashboard, **Other apps** lists your `saio_` keys and makes the newer `gfy_pat_` keys instead.
 
 Three properties of the key matter more than the mechanics:
 
@@ -381,7 +385,7 @@ No. Version 1 is read-only. Every endpoint answers `GET` only, and any other met
 
 ### Where do I create a Growthify API key?
 
-In the Growthify account dashboard under **API Keys**, or in the embedded Shopify admin under **Settings**. The plaintext key is shown exactly once, at creation. Growthify stores only a SHA-256 hash of it, so a lost key is replaced rather than recovered.
+In the embedded Shopify admin under **Settings**. On the web dashboard, **Other apps** lists them and makes the newer `gfy_pat_` keys instead. The plaintext key is shown exactly once, at creation. Growthify stores only a SHA-256 hash of it, so a lost key is replaced rather than recovered.
 
 ### Why does the API return 404 instead of 403 for another store?
 

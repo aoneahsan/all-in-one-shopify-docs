@@ -206,6 +206,7 @@ const config: Config = {
         { type: 'docSidebar', sidebarId: 'mainSidebar', position: 'left', label: 'Docs' },
         { to: '/getting-started/installation', label: 'Get Started', position: 'left' },
         { to: '/modules/overview', label: 'Modules', position: 'left' },
+        { to: '/developers', label: 'Developers', position: 'left' },
         {
           type: 'dropdown',
           label: 'Get Growthify',
@@ -237,6 +238,7 @@ const config: Config = {
             { label: 'Modules overview', to: '/modules/overview' },
             { label: 'Storefront blocks', to: '/storefront/theme-blocks' },
             { label: 'Storefront API', to: '/api/storefront-api' },
+            { label: 'Developers', to: '/developers' },
           ],
         },
         {

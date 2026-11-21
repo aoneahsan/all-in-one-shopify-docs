@@ -76,6 +76,10 @@ keywords: [shopify webhooks, gdpr compliance webhooks, customers redact, shop re
 
 # Webhooks
 
+:::note Looking for webhooks to your own server?
+This page covers what Shopify sends to Growthify. For signed messages Growthify sends to **your** server when a review arrives or a campaign sends, see [Webhooks for developers](../developers/webhooks.md).
+:::
+
 **A webhook here is a request Shopify sends to Growthify when something changes in a merchant's store — an uninstall, a plan change, a new order, or a legally mandated data request — and every one is HMAC-verified before any handler touches it.** Growthify subscribes to **ten topics**: the three Shopify makes mandatory for GDPR, and seven lifecycle topics it needs to keep its own state true.
 
 ## Who this page is for

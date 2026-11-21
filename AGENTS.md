@@ -1,6 +1,6 @@
 # Growthify Docs — project guidance (CLAUDE.md = AGENTS.md, byte-identical)
 
-**Last Updated:** 2026-10-20
+**Last Updated:** 2026-11-21
 
 <!-- fleet:node-26-13-1 v1 --> Node 26.13.1 LTS (.nvmrc), packages latest — 2026-11-16
 
@@ -8,7 +8,7 @@ Public documentation site for **Growthify** (the `all-in-one-shopify` Shopify ap
 
 ## What this repo is
 - A **PUBLIC** docs site. The app/code repo (`all-in-one-shopify`) is separate and **private**.
-- Documents the REAL product read from the app code. Counts verified 2026-09-12 against the app repo's `what-this-project-consists-of.md`: 274 Remix route files (51 `admin.features.*` screens, 55 `api.storefront.*` routes), 16 entitlement modules, 15 numbered module specs, 72 theme blocks, 4 billing tiers, GDPR + lifecycle webhooks, a read-only Merchant API v1.
+- Documents the REAL product read from the app code. Counts verified 2026-09-12 against the app repo's `what-this-project-consists-of.md`: 274 Remix route files (51 `admin.features.*` screens, 55 `api.storefront.*` routes), 16 entitlement modules, 15 numbered module specs, 72 theme blocks, 4 billing tiers, GDPR + lifecycle webhooks, a read-only Merchant API v1. `docs/developers/` documents the open platform (API, MCP, webhooks, calendar feeds, two-step sign-in), read from the server's `open-platform.config.ts`. Written 2026-11-21 before go-live: re-check its addresses, limits and payloads against the live functions once deployed.
 - 🔴 **The 16 entitlement module ids and the 15 numbered module specs are DIFFERENT SETS.** Never equate the two counts or present one list as the other.
 
 ## Hard rules

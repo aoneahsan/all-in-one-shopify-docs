@@ -69,6 +69,21 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Developers',
+      collapsed: true,
+      link: { type: 'doc', id: 'developers/index' },
+      items: [
+        'developers/access-keys',
+        'developers/api',
+        'developers/assistants',
+        'developers/webhooks',
+        'developers/calendar-feeds',
+        'developers/two-step-sign-in',
+        'developers/changelog',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Moving to Growthify',
       collapsed: true,
       link: { type: 'doc', id: 'compare/index' },

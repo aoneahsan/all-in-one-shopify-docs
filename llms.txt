@@ -10,7 +10,7 @@
 
 ## About
 
-Growthify replaces a stack of single-purpose Shopify apps with one install. The backend is a Remix app (Prisma over Supabase PostgreSQL) that owns Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, and 55 entitlement-gated storefront API routes. The customer-facing half is a Shopify theme app extension with 72 Liquid blocks, fronted by a single `Growthify Embed` app-embed that injects `window.gfConfig` and lazy-loads each enabled module. Premium features are gated through Shopify App Subscriptions only (no license keys). A read-only Merchant API v1 lets a merchant's own systems read their store, usage, reviews and wishlist demand.
+Growthify replaces a stack of single-purpose Shopify apps with one install. The backend is a Remix app (Prisma over Supabase PostgreSQL) that owns Shopify OAuth, GDPR compliance webhooks, App Subscriptions billing, and 55 entitlement-gated storefront API routes. The customer-facing half is a Shopify theme app extension with 72 Liquid blocks, fronted by a single `Growthify Embed` app-embed that injects `window.gfConfig` and lazy-loads each enabled module. Premium features are gated through Shopify App Subscriptions only (no license keys). A read-only Merchant API v1 lets a merchant's own systems read their store, usage, reviews and wishlist demand, and the newer Growthify API, MCP server and webhooks reach more of one store's data (see Developers).
 
 Counts on this site were verified against the application source on 2026-09-12.
 
@@ -53,6 +53,17 @@ This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a struct
 - [Storefront API](https://growthify-docs.aoneahsan.com/api/storefront-api): The 55 storefront routes behind the app proxy.
 - [Webhooks](https://growthify-docs.aoneahsan.com/api/webhooks): GDPR compliance webhooks, app/uninstalled, subscriptions, orders, products, inventory.
 - [Merchant API v1](https://growthify-docs.aoneahsan.com/api/merchant-api-v1): The read-only `saio_` bearer-key REST API — `/api/v1/me`, `/store`, `/usage`, `/reviews`, `/wishlist`, with cursor pagination, a 60-request-per-minute per-key budget, and a documented error-code table.
+
+## Developers
+
+- [Growthify for developers](https://growthify-docs.aoneahsan.com/developers): reach one store's Growthify data from your own code, an assistant, webhooks or a calendar feed, set up under Other apps on the web dashboard. Store data (settings, modules, campaigns, bundles and offers, rules, review moderation, reports) is read and changed; shopper records are read only with fixed fields. Per-store limits Free/Pro/Growth/Scale: keys 5/25/25/50, requests a day 5,000/50,000/50,000/100,000, webhook addresses 3/20/20/40, assistants 3/10/10/25, calendar feeds 2/10/10/20.
+- [Access keys](https://growthify-docs.aoneahsan.com/developers/access-keys): gfy_pat_ keys, reach and expiry, showing and replacing, moving from Merchant API v1 saio_ keys.
+- [The API](https://growthify-docs.aoneahsan.com/developers/api): base https://mldbdtltrxojmqzglupg.supabase.co/functions/v1/api/v1, every resource, errors, cursors, rate limits. OpenAPI 3.1: https://mldbdtltrxojmqzglupg.supabase.co/functions/v1/api/v1/openapi.json
+- [Assistants](https://growthify-docs.aoneahsan.com/developers/assistants): MCP at https://mldbdtltrxojmqzglupg.supabase.co/functions/v1/mcp for Claude, ChatGPT, Claude Code and Cursor; one store per connection; deletes wait for the merchant's yes.
+- [Webhooks](https://growthify-docs.aoneahsan.com/developers/webhooks): 23 events, Standard Webhooks signatures, Node and Python checks, retries. Ids, counts and totals only.
+- [Calendar feeds](https://growthify-docs.aoneahsan.com/developers/calendar-feeds): ICS feeds of campaign send times and offer dates for Google and Apple Calendar.
+- [Two-step sign-in](https://growthify-docs.aoneahsan.com/developers/two-step-sign-in): authenticator codes, recovery codes, 7-day remembered browser.
+- [Developer changelog](https://growthify-docs.aoneahsan.com/developers/changelog)
 
 ## Legal
 

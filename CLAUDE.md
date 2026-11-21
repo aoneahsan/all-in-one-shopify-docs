@@ -42,7 +42,7 @@ yarn serve       # serve the built output
 - Content-enrichment tracker: `docs/tracking/all-in-one-shopify-docs-content-tracker.json` (resumable, one category per batch).
 
 ## Deployment — GitHub Pages ONLY
-- `.github/workflows/deploy-pages.yml` on push to `main`; `static/CNAME` = `growthify-docs.aoneahsan.com` (probed `200`, 2026-09-12).
+- Deploy by hand (no GitHub Actions, house rule): `yarn build`, check it in the automation browser, then publish `build/` to the `gh-pages` branch through a worktree in the workspace `temp/` (Pages source: `gh-pages`, `/`); `static/CNAME` = `growthify-docs.aoneahsan.com`.
 - 🔴 **No Firebase for this site** — no `firebase.json`, no `.firebaserc`, no `firebase:deploy`. A docs site is not a Firebase app.
 - DNS and the Pages custom-domain setting are owner-only; both completed 2026-09-12 (`docs/MANUAL-TASKS.md`).
 
